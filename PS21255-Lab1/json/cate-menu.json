@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "menu": "Dresses",
+    "submenu": ["Men's Dresses", "Women Dresses", "Baby's Dresses"]
+  },
+  {
+    "id": 1,
+    "menu": "Shirts"
+  },
+  {
+    "id": 2,
+    "menu": "Jeans"
+  },
+  {
+    "id": 3,
+    "menu": "Swimwear"
+  },
+  {
+    "id": 4,
+    "menu": "Sleepwear"
+  },
+  {
+    "id": 5,
+    "menu": "Sportswear"
+  },
+  {
+    "id": 6,
+    "menu": "Jumpsuits"
+  },
+  {
+    "id": 7,
+    "menu": "Blazers"
+  },
+  {
+    "id": 8,
+    "menu": "Jackets"
+  },
+  {
+    "id": 9,
+    "menu": "Shoes"
+  }
+]

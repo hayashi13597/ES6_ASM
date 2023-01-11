@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "img/cat-1.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 2,
+    "image": "img/cat-2.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 3,
+    "image": "img/cat-3.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 4,
+    "image": "img/cat-4.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 5,
+    "image": "img/cat-1.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 6,
+    "image": "img/cat-2.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 7,
+    "image": "img/cat-3.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 8,
+    "image": "img/cat-4.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 9,
+    "image": "img/cat-1.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 10,
+    "image": "img/cat-2.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 11,
+    "image": "img/cat-3.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  },
+  {
+    "id": 12,
+    "image": "img/cat-4.jpg",
+    "name": "Category Name",
+    "amount": "100 Products"
+  }
+]

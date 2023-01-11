@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Shirts"
+  },
+  {
+    "id": 2,
+    "name": "Jeans"
+  },
+  {
+    "id": 3,
+    "name": "Swimwear"
+  },
+  {
+    "id": 4,
+    "name": "Sleepwear"
+  },
+  {
+    "id": 5,
+    "name": "Sportswear"
+  },
+  {
+    "id": 6,
+    "name": "Jumpsuits"
+  },
+  {
+    "id": 7,
+    "name": "Blazers"
+  },
+  {
+    "id": 8,
+    "name": "Jackets"
+  },
+  {
+    "id": 9,
+    "name": "Shoes"
+  }
+]

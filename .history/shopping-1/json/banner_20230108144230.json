@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Men Fashion",
+    "img": "carousel-1.jpg",
+    "description": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam"
+  },
+  {
+    "title": "Women Fashion",
+    "img": "carousel-2.jpg",
+    "description": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam"
+  },
+  {
+    "title": "Kids Fashion",
+    "img": "carousel-3.jpg",
+    "description": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam"
+  },
+  {
+    "title": "Unisex Fashion",
+    "img": "carousel-3.jpg",
+    "description": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam"
+  }
+]
