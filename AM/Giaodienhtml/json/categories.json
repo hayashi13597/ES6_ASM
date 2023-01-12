@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name_cate": "Honda"
+  },
+  {
+    "id": 2,
+    "name_cate": "Hyundai"
+  },
+  {
+    "id": 5,
+    "name_cate": "Mitsubishi"
+  },
+  {
+    "id": 4,
+    "name_cate": "Suzuki"
+  },
+  {
+    "id": 3,
+    "name_cate": "Toyota"
+  }
+]

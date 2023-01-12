@@ -1,0 +1,170 @@
+.bg-demo1 {
+    background-color: aqua;
+}
+
+.bg-demo2 {
+    background-color: red;
+}
+
+.content-login {
+    min-height: 664px;
+}
+.main-content {
+    gap: 100px;
+    padding: 40px 0;
+}
+/* Welcome - BOX */
+
+.box-background {
+    width: 472px;
+    height: 451px;
+    background: #12232e;
+    border-radius: 3px;
+}
+
+.in-box-welcome {
+    justify-content: space-around;
+    width: 388px;
+    height: 367px;
+    border: 4px solid #007cc7;
+    border-radius: 3px;
+}
+
+.label-box {
+    line-height: 28px;
+    padding: 8px;
+    color: #ffff;
+}
+.label-box p:first-child {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 8px;
+}
+
+.label-box p:last-child {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.item-footer a {
+    color: #fff;
+    font-size: 14pt;
+}
+
+::placeholder {
+    font-size: 15px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+.form-group {
+    padding: 12px 0 12px 0;
+}
+.form-group .form-control {
+    background: #152836;
+    border-radius: 3px;
+    padding: 15px 16px;
+    color: #fff;
+    outline: none;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.bg-submit {
+    background-color: #007cc7 !important;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+.bg-submit:hover {
+    opacity: 0.8;
+    color: #a9a9a9;
+}
+
+.successRegister {
+    display: none;
+    color: green;
+}
+
+.content-register {
+    min-height: 664px;
+}
+
+.invalid {
+    display: block;
+    margin-top: 16px;
+    color: red;
+}
+
+input {
+    margin-bottom: 4px;
+}
+
+.row {
+    width: 100%;
+}
+
+.container {
+    width: 1440px;
+}
+
+.container--1260 {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.container--1024 {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+.icon-ft a {
+    font-size: 25px;
+}
+.rememer-me {
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.a-link {
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.admin-left {
+    float: left;
+    width: 20%;
+    background-color: #fcb000;
+}
+.clear-fix {
+    clear: both;
+}
+.container-content {
+    width: 80%;
+    float: right;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+}
+.text-desc {
+    white-space: nowrap;
+    overflow: auto;
+    width: 250px;
+}
+.container {
+    position: relative;
+}
+
+.container:hover .card-img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container:hover .btn-delete {
+    opacity: 1;
+}
+
+.btn-delete {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

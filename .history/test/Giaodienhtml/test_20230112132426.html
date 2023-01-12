@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css/slick-slider/slick.css" />
+    <link rel="stylesheet" href="css/notification.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="header-container">
+      <div class="container">
+        <header>
+          <div id="menu_header_mobile" class="menu_header_mobile">
+            <img src="icon/bx_bx-menu.svg" alt="" />
+          </div>
+          <div id="menu-header-mobile-select" class="menu-header-mobile-select">
+            <img
+              id="clear-menu-mobile"
+              class="clear"
+              src="icon/clear.svg"
+              alt=""
+            />
+            <div class="mobile-link-mxh">
+              <a href=""><img src="icon/facebook.svg" alt="" /></a>
+              <a href=""><img src="icon/instagram.svg" alt="" /></a>
+              <a href=""><img src="icon/youtube.svg" alt="" /></a>
+            </div>
+            <ul>
+              <li><a href="#">Xe mới</a></li>
+              <li><a href="#">Xe cũ</a></li>
+              <li><a href="#">Đấu giá xe</a></li>
+              <li><a href="#">Bán xe</a></li>
+              <li>
+                <a href="#"><p>Kinh nghiệm</p> </a>
+              </li>
+            </ul>
+            <div class="login-language_header_mobile">
+              <a class="login" href="#">
+                <img class="ic_login" src="icon/bx_bxs-user.svg" alt="" />
+                Đăng nhập
+              </a>
+              <div class="language">
+                <img
+                  class="ic_language"
+                  src="icon/clarity_world-line.svg"
+                  alt=""
+                />
+                VIE
+                <img
+                  class="ic_language-2"
+                  src="icon/akar-icons_chevron-down.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <a class="logo_header" href="#"
+            ><img src="img/car_logo2.png" alt=""
+          /></a>
+          <div class="notification_mobile">
+            <img src="icon/codicon_bell-dot.svg" alt="" />
+          </div>
+          <ul class="menu_header">
+            <li><a href="#">Xe mới</a></li>
+            <li><a href="#">Xe cũ</a></li>
+            <li><a href="#">Đấu giá xe</a></li>
+            <li><a href="#">Bán xe</a></li>
+            <li>
+              <a class="drop-down" href="#"
+                ><p>Kinh nghiệm</p>
+                <img
+                  class="ic_exp"
+                  src="icon/akar-icons_chevron-down.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="login-language_header">
+            <!-- <a class="login" href="#">
+                      <img class="ic_login" src="icon/bx_bxs-user.svg" alt="">
+                      Đăng nhập
+                  </a> -->
+
+            <!-- Drop down login user start -->
+            <a
+              onclick="showLoginUser()"
+              id="login-user"
+              class="login-user"
+              href="#"
+            >
+              <img class="ic_login" src="icon/bx_bxs-user.svg" alt="" />
+              Admin
+            </a>
+
+            <div id="drop-down-login-user" class="drop-down-login-user">
+              <div class="drop-down-login-user-ar1"></div>
+              <div class="drop-down-login-user-content">
+                <img
+                  class="ic_login_user"
+                  src="icon/user-profile-square.svg"
+                  alt=""
+                />
+                <p class="name-login-user">Admin</p>
+                <hr />
+                <a href="" class="manage-account">
+                  <img src="icon/Setting_fill.svg" alt="" />
+                  <p class="text-manage-account">Quản lý tài khoản</p>
+                </a>
+                <a href="" class="manage-account">
+                  <img src="icon/message-chat-01.svg" alt="" />
+                  <p class="text-manage-account">Tin nhắn với đại lý</p>
+                </a>
+                <a href="" class="manage-account">
+                  <img src="icon/Bell_fill.svg" alt="" />
+                  <p class="text-manage-account">Thông báo dành cho bạn</p>
+                </a>
+                <a href="" class="manage-account">
+                  <img src="icon/Message_alt_fill.svg" alt="" />
+                  <p class="text-manage-account">Hộp thư hỗ trợ</p>
+                </a>
+                <a href="" class="manage-account">
+                  <img src="icon/logout-02.svg" alt="" />
+                  <p class="text-manage-account">Đăng xuất</p>
+                </a>
+              </div>
+            </div>
+
+            <script>
+              function showLoginUser() {
+                document
+                  .getElementById("drop-down-login-user")
+                  .classList.toggle("show");
+              }
+
+              window.onclick = function (event) {
+                if (!event.target.matches(".login-user")) {
+                  var dropdowns = document.getElementsByClassName(
+                    "drop-down-login-user"
+                  );
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                      openDropdown.classList.remove("show");
+                    }
+                  }
+                }
+              };
+            </script>
+            <!-- Drop down login user end -->
+
+            <div class="language">
+              <img
+                class="ic_language"
+                src="icon/clarity_world-line.svg"
+                alt=""
+              />
+              VIE
+              <img
+                class="ic_language-2"
+                src="icon/akar-icons_chevron-down.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <script src="js/menu-mobile-show.js"></script>
+
+    <!-- End code header -->
+
+    <div class="slideshow-container">
+      <div class="switch-button">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div class="mySlides">
+        <div
+          class="img-slideshow"
+          style="background-image: url('img/1.png')"
+        ></div>
+      </div>
+
+      <div class="mySlides">
+        <div
+          class="img-slideshow"
+          style="background-image: url('img/2.png')"
+        ></div>
+      </div>
+
+      <div class="mySlides">
+        <div
+          class="img-slideshow"
+          style="background-image: url('img/3.png')"
+        ></div>
+      </div>
+
+      <div class="mySlides">
+        <div
+          class="img-slideshow"
+          style="background-image: url('img/4.png')"
+        ></div>
+      </div>
+
+      <script src="js/slideshow.js"></script>
+    </div>
+
+    <!-- Start code filter -->
+
+    <div class="container-filter">
+      <div class="filter container">
+        <form action="" method="post">
+          <div id="select-car" class="select-car">
+            <a class="all-car text-select-car active-text-select-car">Tất cả</a>
+
+            <a class="new-car text-select-car">Xe mới</a>
+
+            <a class="old-car text-select-car">Xe cũ</a>
+          </div>
+          <div class="search-model-brand">
+            <input type="search" class="search" placeholder="Tìm kiếm" />
+            <select class="model" name="" id="">
+              <option value="">Dòng xe</option>
+            </select>
+            <select class="brand" name="" id="">
+              <option value="">Hãng xe</option>
+            </select>
+          </div>
+          <div class="location-price-submit">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="location"
+              placeholder="Địa điểm"
+            />
+            <div class="price">
+              <div class="values">
+                <span class="text-note-price">Mức Giá </span> <br />
+                <span class="text-range"
+                  >₫.<span id="range1">0</span> - ₫<span id="range2"
+                    >100</span
+                  ></span
+                >
+              </div>
+              <div class="scroll-bar">
+                <div class="slider-track">
+                  <input
+                    type="range"
+                    min="0"
+                    max="9000"
+                    value="0"
+                    id="slider-1"
+                    oninput="slideOne()"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    max="9000"
+                    value="9000"
+                    id="slider-2"
+                    oninput="slideTwo()"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="submit" type="submit">Tìm kiếm</button>
+          </div>
+        </form>
+        <script src="js/scroll-bar.js"></script>
+        <script src="js/select-car-active.js"></script>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="" method="post">
+        <div class="search-filter-mobile">
+          <input type="search" class="search-mobile" placeholder="Tìm kiếm" />
+          <img src="icon/filter-icon.svg" alt="" />
+        </div>
+      </form>
+    </div>
+
+    <!-- End code filter -->
+
+    <!-- Start code slide show mobile -->
+
+    <div class="container">
+      <div class="slideshow-container-mobile">
+        <div class="switch-button-mobile">
+          <span class="dot-mobile" onclick="currentSlideMobile(1)"></span>
+          <span class="dot-mobile" onclick="currentSlideMobile(2)"></span>
+          <span class="dot-mobile" onclick="currentSlideMobile(3)"></span>
+          <span class="dot-mobile" onclick="currentSlideMobile(4)"></span>
+        </div>
+
+        <div class="mySlides-mobile">
+          <div
+            class="img-slideshow-mobile"
+            style="background-image: url('img/1.png')"
+          ></div>
+        </div>
+
+        <div class="mySlides-mobile">
+          <div
+            class="img-slideshow-mobile"
+            style="background-image: url('img/2.png')"
+          ></div>
+        </div>
+
+        <div class="mySlides-mobile">
+          <div
+            class="img-slideshow-mobile"
+            style="background-image: url('img/3.png')"
+          ></div>
+        </div>
+
+        <div class="mySlides-mobile">
+          <div
+            class="img-slideshow-mobile"
+            style="background-image: url('img/4.png')"
+          ></div>
+        </div>
+
+        <script src="js/slideshow-mobile.js"></script>
+      </div>
+    </div>
+
+    <!-- End code slide show mobile -->
+
+    <!-- End code slide-show -->
+    <!-- Recommended Car start -->
+    <div class="container">
+      <div class="recommended-car">
+        <h2 class="text-title">Xe Được Đề Xuất</h2>
+        <div id="select-new-old-car-filter" class="select-more">
+          <a
+            onclick="filterSelection('newcarfilter')"
+            class="new-car select-new-old-car active-new-old-car"
+            >Xe mới</a
+          >
+          <a
+            onclick="filterSelection('oldcarfilter')"
+            class="old-car select-new-old-car"
+            >Xe cũ</a
+          >
+          <a class="more-car" href=""
+            >Xem thêm <img src="icon/arrow-right-more.svg" alt=""
+          /></a>
+        </div>
+        <div class="car-product" id="car-data">
+          {{--
+          <a href="" class="car-box newcarfilter">
+            <div
+              class="img-car-box-product"
+              style="background-image: url('img/Rectangle\ 98.png')"
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe mới</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box newcarfilter">
+            <div
+              class="img-car-box-product"
+              style="
+                background-image: url('img/car-on-a-forest-path-photo.jpg');
+              "
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe mới</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box newcarfilter">
+            <div
+              class="img-car-box-product"
+              style="background-image: url('img/Rectangle\ 110.png')"
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe mới</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box newcarfilter">
+            <div
+              class="img-car-box-product"
+              style="background-image: url('img/pexels-pixabay-358070.jpg')"
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe mới</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box oldcarfilter">
+            <div
+              class="img-car-box-product"
+              style="background-image: url('img/hinh-anh-xe-oto-dep-3.jpg')"
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe cũ</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box oldcarfilter">
+            <div
+              class="img-car-box-product"
+              style="
+                background-image: url('img/suv-automobile-driving-through-foggy-and-rainy-forest-road-CAVF75458.jpg');
+              "
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe cũ</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="car-box oldcarfilter">
+            <div
+              class="img-car-box-product"
+              style="
+                background-image: url('img/car-on-a-forest-path-photo.jpg');
+              "
+            ></div>
+            <div class="info-car">
+              <p class="status">Xe cũ</p>
+              <p class="name-car">Tesla Model 3 Standard Range Plus</p>
+              <p class="price-car">₫1 tỷ 410 triệu</p>
+              <p class="address-car">Quận 1, TP HCM</p>
+              <div class="year-drive">
+                <div class="year">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Rear-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat">
+                <div class="energy">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Điện</p>
+                </div>
+                <div class="seat">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="reviews">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          --}}
+        </div>
+        <script src="js/filter-recommended-car.js"></script>
+      </div>
+    </div>
+
+    <!-- Recommended Car enđ -->
+
+    <!-- Car comparison start -->
+
+    <div class="container">
+      <div class="car-comparison">
+        <h2 class="text-title">So Sánh Xe</h2>
+        <div class="info-comparison">
+          <a href="" class="car-box-2">
+            <div
+              class="img-car-box-product-2"
+              style="
+                background-image: url('img/2022_Hyundai_Elantra_Hybrid.jpg');
+              "
+            ></div>
+            <div class="info-car-2">
+              <p class="status-2">Xe mới</p>
+              <p class="name-car-2">Ford F-250 Super Duty</p>
+              <p class="price-car-2">₫1 tỷ 410 triệu</p>
+              <p class="address-car-2">Quận 1, TP HCM</p>
+              <div class="year-drive-2">
+                <div class="year-2">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive-2">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Four-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat-2">
+                <div class="energy-2">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Dầu</p>
+                </div>
+                <div class="seat-2">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line-2"></div>
+              <div class="reviews-2">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+          <div class="and-comparison">
+            <div class="and-comparison-2">
+              <p>VS</p>
+            </div>
+          </div>
+          <a href="" class="car-box-2">
+            <div
+              class="img-car-box-product-2"
+              style="
+                background-image: url('img/car-on-a-forest-path-photo.jpg');
+              "
+            ></div>
+            <div class="info-car-2">
+              <p class="status-2">Xe mới</p>
+              <p class="name-car-2">Ford F-250 Super Duty</p>
+              <p class="price-car-2">₫1 tỷ 410 triệu</p>
+              <p class="address-car-2">Quận 1, TP HCM</p>
+              <div class="year-drive-2">
+                <div class="year-2">
+                  <img src="icon/iwwa_year.svg" alt="" />
+                  <p>2021</p>
+                </div>
+                <div class="drive-2">
+                  <img src="icon/tabler_steering-wheel.svg" alt="" />
+                  <p>Four-wheel Drive</p>
+                </div>
+              </div>
+              <div class="energy-seat-2">
+                <div class="energy-2">
+                  <img src="icon/clarity_fuel-line.svg" alt="" />
+                  <p>Dầu</p>
+                </div>
+                <div class="seat-2">
+                  <img src="icon/bi_people.svg" alt="" />
+                  <p>5 chỗ</p>
+                </div>
+              </div>
+              <div class="line-2"></div>
+              <div class="reviews-2">
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star.svg" alt="" />
+                <img src="icon/star_border.svg" alt="" />
+                <p>(12 Đánh giá)</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button type="submit" class="compare-submit">Tiến Hành So Sánh</button>
+      </div>
+    </div>
+
+    <!-- Car comparison end -->
+
+    <!-- News Reviews start -->
+
+    <div class="container">
+      <div class="news-reviews">
+        <div class="select-news-reviews">
+          <a class="select-snreviews" href="">Tin tức</a>
+          <a href="">Đánh giá xe</a>
+        </div>
+        <div class="box-news-reviews">
+          <a href="" class="box-news-reviews-1">
+            <img src="img/2022_Hyundai_Elantra_Hybrid.jpg" alt="" />
+            <div class="date-bnr1">
+              <p>20/12/2022</p>
+            </div>
+            <div class="content-bnr1">
+              <p class="title-cbnr1">Mercedes-AMG GT2 ra mắt toàn cầu</p>
+              <p class="text-cbnr1">
+                Mẫu xe Mercedes-AMG GT2 vừa được giới thiệu đến công chúng và là
+                chiếc xe đua mạnh nhất của hãng.
+              </p>
+              <div class="poster-by">
+                <img src="img/top-hinh-nen-sieu-xe-57.jpg" alt="" />
+                <p>Theo Ngọc Hoàng</p>
+              </div>
+            </div>
+          </a>
+          <div class="box-news-reviews-2">
+            <a href="" class="box-1-bnr2">
+              <img src="img/Tesla.png" alt="" />
+              <div class="content-b1bnr2">
+                <p class="title-cb1bnr2">Giá xe Mitsubishi Outlander</p>
+                <p class="text-cb1bnr2">
+                  Cập nhật giá niêm yết và lăn bánh xe Mitsubishi Outlander đầy
+                  đủ các phiên bản.
+                </p>
+                <div class="poster-by">
+                  <img src="img/top-hinh-nen-sieu-xe-57.jpg" alt="" />
+                  <p>Theo Nhật Hạ - 15/12/2022</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="box-1-bnr2">
+              <img src="img/Rectangle 98.png" alt="" />
+              <div class="content-b1bnr2">
+                <p class="title-cb1bnr2">Giá xe Suzuki XL7</p>
+                <p class="text-cb1bnr2">
+                  Cập nhật giá xe Suzuki XL7 niêm yết và lăn bánh mới nhất đầy
+                  đủ các phiên bản.
+                </p>
+                <div class="poster-by">
+                  <img src="img/top-hinh-nen-sieu-xe-57.jpg" alt="" />
+                  <p>Theo Nhật Hạ - 13/12/2022</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Reviews end -->
+
+    <!-- About us start -->
+
+    <div class="container-2">
+      <div class="container">
+        <div class="about-us">
+          <h2 class="title-au">Về Chúng Tôi</h2>
+          <div class="content-box-au">
+            <div class="box-1-cta">
+              <p class="text-b1cta">
+                AutoHunt là trang web hàng đầu Việt Nam về lĩnh vực ô tô. Cung
+                cấp thông tin về giá xe ô tô, thị trường ô tô trong và ngoài
+                nước. Danh sách các đại lý ô tô, các xưởng dịch vụ sửa chữa xe
+                hơi các hãng xe trên cả nước để người đọc có thể tham khảo
+              </p>
+              <div class="ctn-1-b1cta">
+                <div class="b-c1b">
+                  <p class="number-bc1b">150</p>
+                  <div class="line-1-bc1b"></div>
+                  <div class="line-2-bc1b"></div>
+                  <p class="text-bc1b">Xe Còn Hàng</p>
+                </div>
+                <div class="b-c1b">
+                  <p class="number-bc1b">40</p>
+                  <div class="line-1-bc1b"></div>
+                  <div class="line-2-bc1b"></div>
+                  <p class="text-bc1b">Xe Đã Bán</p>
+                </div>
+              </div>
+              <div class="ctn-1-b1cta">
+                <div class="b-c1b">
+                  <p class="number-bc1b">38</p>
+                  <div class="line-1-bc1b"></div>
+                  <div class="line-2-bc1b"></div>
+                  <p class="text-bc1b">Khách Hài Lòng</p>
+                </div>
+                <div class="b-c1b">
+                  <p class="number-bc1b">5</p>
+                  <div class="line-1-bc1b"></div>
+                  <div class="line-2-bc1b"></div>
+                  <p class="text-bc1b">Giải Thưởng</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image-about-us"
+              style="
+                background-image: url('img/hinh-anh-xe-lamborghini-dep-nhat-34.jpg');
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us end -->
+
+    <!-- Service selection start -->
+
+    <div class="container">
+      <div class="service-selection">
+        <h2 class="title-service-selection">Lựa Chọn Dịch Vụ</h2>
+        <div class="select-service-selection">
+          <a class="box-select-ss" href="{{ route('product') }}">
+            <img src="icon/ion_car-sport-outline.svg" alt="" />
+            <p>Mua xe mới</p>
+          </a>
+          <a class="box-select-ss" href="{{ route('product') }}">
+            <img src="icon/la_car.svg" alt="" />
+            <p>Mua xe cũ</p>
+          </a>
+          <a class="box-select-ss" href="">
+            <img src="icon/ic_outline-sell.svg" alt="" />
+            <p>Bán xe</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service selection end -->
+
+    <!-- Testimonial start -->
+
+    <div class="testimonial">
+      <div class="container">
+        <h2 class="title-testimonial">Nhận Xét Từ Khách Hàng</h2>
+      </div>
+      <div class="testimonial-scroll">
+        <div class="box-testimonial">
+          <div class="arrow-testimonial"></div>
+          <div class="content-btestimonial container">
+            <img class="arrow-cbtest" src="icon/Polygon.svg" alt="" />
+            <img
+              class="picture-customer"
+              src="img/hinh-nen-sieu-xe.jpg"
+              alt=""
+            />
+            <div class="text-content-btestimonial">
+              <p class="name-customer">Hữu Đô Nguyễn</p>
+              <p class="role-tcb">Khách hàng</p>
+              <p class="text-tcb">
+                Hệ thống phanh có tác dụng giảm tốc độ và dừng xe khi cần thiết
+                để đảm bảo an toàn giao thông khi lưu thông trên đường. Chính vì
+                vậy chúng ta cần sử dụng hệ thống này thật hiệu quả và nêm
+                thường xuyên kiểm tra bảo dưỡng nhằm đảm bảo tình trạng hoạt
+                động của chúng luôn tốt nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-testimonial">
+          <div class="arrow-testimonial"></div>
+          <div class="content-btestimonial container">
+            <img class="arrow-cbtest" src="icon/Polygon.svg" alt="" />
+            <img
+              class="picture-customer"
+              src="img/Mercedes_Benz_Vision_AVTR_36.jpg"
+              alt=""
+            />
+            <div class="text-content-btestimonial">
+              <p class="name-customer">Believe</p>
+              <p class="role-tcb">Khách hàng</p>
+              <p class="text-tcb">
+                Thị trường ô tô đang vào mùa "nước rút" với những chương trình
+                ưu đãi lớn nhằm kích cầu doanh số cuối năm. Đây cũng chính là
+                thời điểm thích hợp để các bác tranh thủ tậu "vợ 2" cho mình.
+                Bài viết dưới đây sẽ tổng hợp các mẫu hiện đang giảm giá để các
+                bác tiện tham khảo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-testimonial">
+          <div class="arrow-testimonial"></div>
+          <div class="content-btestimonial container">
+            <img class="arrow-cbtest" src="icon/Polygon.svg" alt="" />
+            <img class="picture-customer" src="img/oto-avatar.jpg" alt="" />
+            <div class="text-content-btestimonial">
+              <p class="name-customer">Sơn Vinh</p>
+              <p class="role-tcb">Khách hàng</p>
+              <p class="text-tcb">
+                Thời gian vừa qua, người dùng Honda CR-V liên tục gặp những sự
+                cố khác nhau. Tuy nhiên Honda CR-V vẫn đạt doanh số khá cao. Vậy
+                các lỗi thường gặp trên Honda CR-V là gì và có nghiêm trọng?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-testimonial">
+          <div class="arrow-testimonial"></div>
+          <div class="content-btestimonial container">
+            <img class="arrow-cbtest" src="icon/Polygon.svg" alt="" />
+            <img class="picture-customer" src="img/avatar-edc1.jpg" alt="" />
+            <div class="text-content-btestimonial">
+              <p class="name-customer">Khoa NX</p>
+              <p class="role-tcb">Khách hàng</p>
+              <p class="text-tcb">
+                VinFast VF e34 là mẫu ô tô điện đầu tiên của thương hiệu Việt,
+                được bán ra thị trường Việt sau xe máy điện, xe buýt điện nhưng
+                đã nhanh chóng nhận được sự quan tâm của người tiêu dùng Việt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-testimonial">
+          <div class="arrow-testimonial"></div>
+          <div class="content-btestimonial container">
+            <img class="arrow-cbtest" src="icon/Polygon.svg" alt="" />
+            <img class="picture-customer" src="img/pic_018.jpg" alt="" />
+            <div class="text-content-btestimonial">
+              <p class="name-customer">Hoàng Tuấn</p>
+              <p class="role-tcb">Khách hàng</p>
+              <p class="text-tcb">
+                Nếu một buổi sáng trời đông lạnh lẽo, bạn khởi động xe hơi và
+                phía sau xuất hiện làn khói mờ ảo thì hãy khoan vội lo, đó chỉ
+                là do hơi nước đọng lại trong ống xả bị đốt nóng và bốc hơi.
+                Nhưng nếu nơi bạn sinh sống khá nóng bức hay xe đang di chuyển
+                trên đường thì việc khói xuất hiện rõ ràng là không hề ổn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-slick-slider/jquery-1.11.0.min.js"></script>
+      <script src="js/jquery-slick-slider/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/jquery-slick-slider/slick.min.js"></script>
+      <script src="js/testimonial.js"></script>
+    </div>
+    <script src="js/jquery-slick-slider/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-slick-slider/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery-slick-slider/slick.min.js"></script>
+    <script src="js/testimonial.js"></script>
+    <!-- Testimonial end -->
+
+    <!-- Form Contact start -->
+
+    <div class="form-contact">
+      <div class="container">
+        <div class="container-form-contact">
+          <div class="map-cfc">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.455157251696!2d106.62735075098293!3d10.85294436070495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b161f50ae47%3A0x2328d1d1acc3b11a!2sFPT%20Polytechnic%20-%20T%C3%B2a%20F!5e0!3m2!1svi!2s!4v1668855640930!5m2!1svi!2s"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <form class="form-cfc" action="" method="post">
+            <h2 class="title-form-contact">Liên Hệ</h2>
+            <p class="text-top-input first-text-ti">Tên Của Bạn</p>
+            <input
+              class="input-form-ct1"
+              type="text"
+              name=""
+              id=""
+              placeholder="Nhập Họ và Tên"
+            />
+            <p class="text-top-input">Email</p>
+            <input
+              class="input-form-ct1"
+              type="email"
+              name=""
+              id=""
+              placeholder="Nhập Email"
+            />
+            <p class="text-top-input">Số Điện Thoại</p>
+            <input
+              class="input-form-ct1"
+              type="text"
+              name=""
+              id=""
+              placeholder="Nhập Số Điện Thoại"
+            />
+            <p class="text-top-input">Lời Nhắn</p>
+            <textarea placeholder="Để lại tin nhắn ở đây"></textarea>
+            <button class="submit-form-contact" type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Contact end -->
+
+    <!-- Partner image start -->
+
+    <div class="container">
+      <div class="partner-image">
+        <div class="box-partner-img">
+          <img src="img/Tesla_logo.png" alt="" />
+        </div>
+        <div class="box-partner-img">
+          <img src="img/Audi_logo.png" alt="" />
+        </div>
+        <div class="box-partner-img">
+          <img src="img/Fiat_logo.png" alt="" />
+        </div>
+        <div class="box-partner-img">
+          <img src="img/Huyendai_logo.png" alt="" />
+        </div>
+        <div class="box-partner-img">
+          <img src="img/Peugeot_logo.png" alt="" />
+        </div>
+        <div class="box-partner-img">
+          <img src="img/Volvo_logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner image end -->
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: "{{ route('apiShowAllproducts') }}",
+          type: "GET",
+          cache: false,
+          dataType: "JSON",
+          success: function (data) {
+            let list = data.data;
+            let html = "";
+            list.forEach((element) => {
+              if (element.status == "Xe mới") {
+                html += `<a href="/product/${element.slug}/id-${element.id}" class="car-box newcarfilter show-car-box">
+  <div class="img-car-box-product" style="background-image: url('{{ asset('storage') }}/${element.hinhXe[0]["url"]}');"></div>
+  <div class="info-car">
+      <p class="status">
+          ${element.status}
+      </p>
+      <p class="name-car">
+          ${element.tenXe}
+      </p>
+      <p class="price-car">
+          ₫${element.giaXe}
+      </p>
+      <p class="address-car">
+          Quận 12, TP HCM
+      </p>
+      <div class="year-drive">
+          <div class="year">
+              <img src="icon/iwwa_year.svg" alt="">
+              <p>${element.namSX}</p>
+          </div>
+          <div class="drive">
+              <img src="icon/tabler_steering-wheel.svg" alt="">
+              <p>Rear-wheel Drive</p>
+          </div>
+      </div>
+      <div class="energy-seat">
+          <div class="energy">
+              <img src="icon/clarity_fuel-line.svg" alt="">
+              <p>Điện</p>
+          </div>
+          <div class="seat">
+              <img src="icon/bi_people.svg" alt="">
+              <p>5 chỗ</p>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="reviews">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star_border.svg" alt="">
+          <p>(12 Đánh giá)</p>
+      </div>
+  </div>
+</a>`;
+              } else {
+                html += `<a href="/product/${element.slug}/id-${element.id}" class="car-box oldcarfilter show-car-box">
+  <div class="img-car-box-product" style="background-image: url('{{ asset('storage') }}/${element.hinhXe[0]["url"]}');"></div>
+  <div class="info-car">
+      <p class="status">
+          ${element.status}
+      </p>
+      <p class="name-car">
+          ${element.tenXe}
+      </p>
+      <p class="price-car">
+          ₫${element.giaXe}
+      </p>
+      <p class="address-car">
+          Quận 12, TP HCM
+      </p>
+      <div class="year-drive">
+          <div class="year">
+              <img src="icon/iwwa_year.svg" alt="">
+              <p>${element.namSX}</p>
+          </div>
+          <div class="drive">
+              <img src="icon/tabler_steering-wheel.svg" alt="">
+              <p>Rear-wheel Drive</p>
+          </div>
+      </div>
+      <div class="energy-seat">
+          <div class="energy">
+              <img src="icon/clarity_fuel-line.svg" alt="">
+              <p>Điện</p>
+          </div>
+          <div class="seat">
+              <img src="icon/bi_people.svg" alt="">
+              <p>5 chỗ</p>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="reviews">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star.svg" alt="">
+          <img src="icon/star_border.svg" alt="">
+          <p>(12 Đánh giá)</p>
+      </div>
+  </div>
+</a>`;
+              }
+            });
+            $("#car-data").html(html);
+          },
+        });
+      });
+    </script>
+    <script>
+      const notification = document.querySelector(".notification-box");
+      const close = document.querySelector(".notification-icon");
+      const btnNotification = document.querySelector("#your-notification");
+      close.addEventListener("click", function () {
+        notification.classList.add("close");
+      });
+      btnNotification.addEventListener("click", function () {
+        notification.classList.remove("close");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+{
+  "message": "Danh sách sản phẩm",
+  "data": [
+    {
+      "id": 1,
+      "hangXe": {
+        "name_cate": "Honda"
+      },
+      "tenXe": "CIVIC TYPE R",
+      "namSX": "2022",
+      "slug": "civic-type-r",
+      "color": "vàng",
+      "description": "Từ khi ra mắt, Honda Civic Type R tự hào nhận được nhiều giải thưởng danh giá trên toàn cầu, như Giải thưởng “Xe của năm” được báo BBC Top Gear trao tặng năm 2017; Giải thưởng “Mẫu xe Hatchback nổi bật của năm 2020” do tạp chí Auto Express (Anh Quốc) trao tặng, cùng nhiều các giải thưởng uy tín khác.Là tuyên ngôn đầy cá tính và mạnh mẽ của nhà vô địch đường đua, Honda Civic Type R sở hữu diện mạo thể thao đầy mãn nhãn và cuốn hút.Với động cơ mạnh mẽ và khả năng tăng tốc đầy uy lực, Honda Civic Type R sẽ thỏa mãn niềm đam mê tốc độ cùng hoài bão chinh phục đường đua của chủ sở hữu.",
+      "status": "Xe mới",
+      "giaXe": "876,523,000",
+      "hinhXe": [
+        {
+          "url": "Honda CIVIC TYPE E-image-1670936781856.png"
+        },
+        {
+          "url": "Honda CIVIC TYPE E-image-1670936781647.jpg"
+        },
+        {
+          "url": "Honda CIVIC TYPE E-image-1670936781298.png"
+        },
+        {
+          "url": "CIVIC TYPE R-image-1671651618995.jpg"
+        },
+        {
+          "url": "CIVIC TYPE R-image-1671651618484.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "hangXe": {
+        "name_cate": "Mitsubishi"
+      },
+      "tenXe": "Xpander",
+      "namSX": "2022",
+      "slug": "xpander",
+      "color": "Trắng",
+      "description": "Trang thiết bị Chiều dài tổng thể tăng 120 mm Khoảng sáng gầm 225 mm Hệ thống treo trước sau nâng cấp Mâm xe đa chấu 17-inch, thiết kế mới Đèn chiếu sáng LED T-Shape Vô lăng thể thao thiết kế mới Hệ thống điều khiển hành trình Cruise Control Điều hòa điều chỉnh kỹ thuật số Nội thất da cao cấp Đen & Nâu Màn hình cảm ứng 9-inch kết nối Android Auto, Apple CarPlay Cổng sạc USB Type-C hàng ghế 2 Phanh tay điện tử, Auto Hold Hệ thống cân bằng điện tử (ASC) Hệ thống hỗ trợ khởi hành ngang dốc (HSA)",
+      "status": "Xe mới",
+      "giaXe": "648,000,000",
+      "hinhXe": [
+        {
+          "url": "Xpander-image-1670937444426.jpg"
+        },
+        {
+          "url": "Xpander-image-1670937444675.jpg"
+        },
+        {
+          "url": "Xpander-image-1670937444568.jpg"
+        },
+        {
+          "url": "Xpander-image-1670937444928.jpg"
+        },
+        {
+          "url": "Xpander-image-1670937444618.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "hangXe": {
+        "name_cate": "Honda"
+      },
+      "tenXe": "Honda City",
+      "namSX": "2022",
+      "slug": "honda-city",
+      "color": "Đỏ",
+      "description": "Cuộc sống luôn chuyển động không dừng. Khát khao, nỗ lực không ngừng nghỉ để đạt được những thành tựu mơ ước. Hãy cùng Honda City chinh phục những đỉnh cao thành công mới.  Honda City kiến tạo chuẩn mực cho mọi xu hướng. Với phong cách thiết kế thể thao, năng động đầy cuốn hút, chiếc xe sẽ luôn là tâm điểm mỗi khi xuất hiện. Tận hưởng từng khoảnh khắc của chuyến đi với không gian nội thất rộng rãi và đầy tiện nghi. Với Honda City, mỗi chuyến đi là mộttrải nghiệm đầy cảm hứng.",
+      "status": "Xe mới",
+      "giaXe": "529.000.000",
+      "hinhXe": [
+        {
+          "url": "Honda City-image-1671651475222.png"
+        },
+        {
+          "url": "Honda City-image-1671651475717.png"
+        },
+        {
+          "url": "Honda City-image-1671651475515.png"
+        },
+        {
+          "url": "Honda City-image-167165147577.png"
+        },
+        {
+          "url": "Honda City-image-1671651559739.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "hangXe": {
+        "name_cate": "Honda"
+      },
+      "tenXe": "Honda HR-V",
+      "namSX": "2022",
+      "slug": "honda-hr-v",
+      "color": "Đỏ",
+      "description": "HR-V sở hữu thiết kế mới nhưng vẫn giữ yếu tố thể thao, đồng thời bổ sung thêm gói an toàn chủ động Honda Sensing, tính năng quản lý xe qua ứng dụng thông minh. Kích thước của HR-V thế hệ mới không thay đổi nhiều, xe dài 4.385 mm, rộng 1.790 mm, cao 1.590 mm. So với phiên bản cũ xe tăng 51 mm chiều dài và 18 mm chiều rộng, khoảng sáng gầm của xe cũng tăng thêm 11 mm lên mức 181 mm. Tuy nhiên trục cơ sở của xe vẫn được giữ nguyên ở mức 2.610 mm.",
+      "status": "Xe cũ",
+      "giaXe": "699.000.000",
+      "hinhXe": [
+        {
+          "url": "Honda HR-V-image-167165236848.jpg"
+        },
+        {
+          "url": "Honda HR-V-image-1671652368922.jpg"
+        },
+        {
+          "url": "Honda HR-V-image-167165236826.jpg"
+        },
+        {
+          "url": "Honda HR-V-image-1671652368694.jpg"
+        },
+        {
+          "url": "Honda HR-V-image-1671652368430.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "hangXe": {
+        "name_cate": "Toyota"
+      },
+      "tenXe": "VIOS 1.5E CVT (3 TÚI KHÍ)",
+      "namSX": "2022",
+      "slug": "vios-15e-cvt-3-tui-khi",
+      "color": "Trắng",
+      "description": "Gương chiếu hậu được cải tiến với chức năng điều chỉnh điện ,chức năng gập điện và tích hợp báo rẽ tạo nên sự tiện nghi, dễ dàng hơn hết cho lái xe. Với thiết kế mới, mâm đúc 15 inch mang đến diện mạo cá tính mạnh mẽ đầy thu hút. Đuôi xe là sự kết hợp tương phản giữa cụm đèn sau, đèn sương mù hẹp, trải dài qua hai bên cùng cản sau lớn đem đến cảm giác thể thao và mạnh mẽ nhưng cũng không kém phần tinh tế, sang trọng. Ngoài ra, xe còn tích hợp thêm camera lùi giúp lùi xe thuận tiện và an toàn. Khoang hành lý được thiết kế tối đa hóa diện tích, đáp ứng mọi nhu cầu sử dụng của khách hàng.",
+      "status": "Xe cũ",
+      "giaXe": "542.000.000",
+      "hinhXe": [
+        {
+          "url": "VIOS 1.5E CVT (3 TÚI KHÍ)-image-1671652601805.jpg"
+        },
+        {
+          "url": "VIOS 1.5E CVT (3 TÚI KHÍ)-image-1671652601188.jpg"
+        },
+        {
+          "url": "VIOS 1.5E CVT (3 TÚI KHÍ)-image-1671652601602.jpg"
+        },
+        {
+          "url": "VIOS 1.5E CVT (3 TÚI KHÍ)-image-1671652601215.jpg"
+        },
+        {
+          "url": "VIOS 1.5E CVT (3 TÚI KHÍ)-image-1671652601439.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "hangXe": {
+        "name_cate": "Toyota"
+      },
+      "tenXe": "YARIS 1.5G CVT",
+      "namSX": "2022",
+      "slug": "yaris-15g-cvt",
+      "color": "Xanh",
+      "description": "Góc đuôi xe kết hợp cùng cụm đèn sau bắt mắt, thu hút ánh nhìn ngay từ phía sau. Cụm lưới tản nhiệt tạo ấn tượng với thiết kế hoàn toàn mới, thể thao hơn, kết hợp đèn trước sắc sảo đem lại vẻ ngoài thu hút và đầy mê hoặc. Yaris được trang bị đèn sương mù trước không chỉ giúp lái xe quan sát tốt trong điều kiện thời tiết có sương mù mà còn tăng thêm độ thẩm mỹ cho chiếc xe. Màn hình cảm ứng cùng với dàn âm thanh 6 loa, tích hợp AM/FM, phát nhạc định dạng MP3/WMA/AAC, kết nối USB/Bluetooth, tối đa hóa tiện ích và mang lại trải nghiệm âm thanh trung thực cho hành khách trên xe.",
+      "status": "Xe cũ",
+      "giaXe": "684.000.000",
+      "hinhXe": [
+        {
+          "url": "YARIS 1.5G CVT-image-167165281190.jpg"
+        },
+        {
+          "url": "YARIS 1.5G CVT-image-1671652811515.jpg"
+        },
+        {
+          "url": "YARIS 1.5G CVT-image-1671652811397.jpg"
+        },
+        {
+          "url": "YARIS 1.5G CVT-image-1671652811582.jpg"
+        }
+      ]
+    }
+  ]
+}

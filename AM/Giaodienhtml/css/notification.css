@@ -1,0 +1,85 @@
+.notification-box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notification {
+    width: 80%;
+    height: 80vh;
+    background: #12232e;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+}
+.notification-icon {
+    --height: 40px;
+    --position: -15px;
+    position: absolute;
+    width: var(--height);
+    height: var(--height);
+    right: var(--position);
+    top: var(--position);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: #007cc7;
+}
+
+.close {
+    display: none;
+}
+
+.notification-title {
+    text-align: center;
+}
+
+.notification-content {
+    height: calc(100% - 60px);
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+.notification-content::-webkit-scrollbar {
+    width: 15px;
+}
+.notification-content::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+}
+/* Handle */
+.notification-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.notification-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.notification-content .table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+tr,
+td {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}

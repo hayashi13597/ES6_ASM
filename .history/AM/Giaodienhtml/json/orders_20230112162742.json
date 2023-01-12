@@ -1,0 +1,46 @@
+{
+  "status": true,
+  "message": "Danh sách orders",
+  "data": [
+    {
+      "id": 17,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "phone": "0836846229",
+      "address": "46 Dương Quảng Hàm",
+      "note": "Mua xe",
+      "status": "Đã xác nhận",
+      "updated_at": "22-12-2022",
+      "sanpham": {
+        "id": 4,
+        "hangXe": {
+          "name_cate": "Honda"
+        },
+        "tenXe": "Honda City",
+        "namSX": "2022",
+        "slug": "honda-city",
+        "color": "Đỏ",
+        "description": "Cuộc sống luôn chuyển động không dừng. Khát khao, nỗ lực không ngừng nghỉ để đạt được những thành tựu mơ ước. Hãy cùng Honda City chinh phục những đỉnh cao thành công mới. \r\nHonda City kiến tạo chuẩn mực cho mọi xu hướng. Với phong cách thiết kế thể thao, năng động đầy cuốn hút, chiếc xe sẽ luôn là tâm điểm mỗi khi xuất hiện.\r\nTận hưởng từng khoảnh khắc của chuyến đi với không gian nội thất rộng rãi và đầy tiện nghi. Với Honda City, mỗi chuyến đi là mộttrải nghiệm đầy cảm hứng.",
+        "status": "Xe mới",
+        "giaXe": "529.000.000",
+        "hinhXe": [
+          {
+            "url": "Honda City-image-1671651475222.png"
+          },
+          {
+            "url": "Honda City-image-1671651475717.png"
+          },
+          {
+            "url": "Honda City-image-1671651475515.png"
+          },
+          {
+            "url": "Honda City-image-167165147577.png"
+          },
+          {
+            "url": "Honda City-image-1671651559739.png"
+          }
+        ]
+      }
+    }
+  ]
+}
