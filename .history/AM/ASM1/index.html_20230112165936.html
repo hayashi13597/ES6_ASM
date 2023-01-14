@@ -1150,7 +1150,7 @@
             .map((element) => {
               if (element.status == "Xe mới") {
                 return `<a href="/product/${element.slug}/id-${element.id}" class="car-box newcarfilter show-car-box">
-        <div class="img-car-box-product" style="background-image: url('https://autohunt.shop/storage/${element.hinhXe[0]["url"]}');"></div>
+        <div class="img-car-box-product" style="background-image: url('storage/${element.hinhXe[0]["url"]}');"></div>
         <div class="info-car">
             <p class="status">
                 ${element.status}
@@ -1197,7 +1197,7 @@
       </a>`;
               } else {
                 return `<a href="/product/${element.slug}/id-${element.id}" class="car-box oldcarfilter show-car-box">
-  <div class="img-car-box-product" style="background-image: url('https://autohunt.shop/storage/${element.hinhXe[0]["url"]}');"></div>
+  <div class="img-car-box-product" style="background-image: url('storage/${element.hinhXe[0]["url"]}');"></div>
   <div class="info-car">
       <p class="status">
           ${element.status}
@@ -1248,5 +1248,6 @@
           document.getElementById("car-data").innerHTML = products;
         });
     </script>
+    
   </body>
 </html>
