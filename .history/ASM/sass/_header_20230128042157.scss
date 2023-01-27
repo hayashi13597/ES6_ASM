@@ -1,15 +1,14 @@
 .container {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .header {
   &-topbar {
-    padding: 14px 0;
+    padding: 11px 0;
     text-align: center;
     background-color: $top-bar-bg;
     color: $top-bar-color;
     font-size: 13px;
-    font-weight: 500;
     &__btn {
       font-weight: 500;
       padding: 3px 10px;
@@ -87,8 +86,7 @@
         position: absolute;
         top: 65px;
         z-index: 999;
-        -webkit-box-shadow: 0px 6px 15px rgb(0 0 0 / 20%);
-        box-shadow: 0px 6px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 0 5px #333;
         padding: 10px;
         background-color: #ffffff;
         display: none;
@@ -186,14 +184,14 @@
     }
   }
   &-nav {
-    & > ul {
+    ul {
       list-style: none;
       display: flex;
       align-items: center;
       padding-left: 0;
       gap: 30px;
-      & > li {
-        & > a {
+      li {
+        a {
           text-decoration: none;
           color: $shop-color-text;
           font-size: 15px;
@@ -231,48 +229,24 @@
 }
 .has-submenu {
   position: relative;
-  &:hover > .submenu {
-    pointer-events: auto;
-    visibility: visible;
-    top: 100%;
-    opacity: 1;
-  }
 }
 .submenu {
   position: absolute;
   top: 150%;
+  flex-direction: column;
   background: #fff;
   min-width: 185px;
-  max-width: 180%;
+  // max-width: 180%;
   position: absolute;
   z-index: 99;
   pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
+  // visibility: hidden;
+  // opacity: 0;
   -webkit-box-shadow: 0px 6px 15px rgb(0 0 0 / 20%);
   box-shadow: 0px 6px 15px rgb(0 0 0 / 20%);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  list-style: none;
-  & > li > a {
-    text-decoration: none;
-    padding: 9px 18px;
-    text-align: left;
-    display: block;
-    font-size: 14px;
-    color: $shop-color-text;
-    opacity: 0.85;
-    border-bottom: 1px solid $shop-color-border;
-  }
-}
-.rotate-add {
-  transform: rotate(180deg);
-  transition: transform 0.2s linear;
-}
-.rotate-remove {
-  transform: rotate(0deg);
-  transition: transform 0.2s linear;
 }
 @media screen and (max-width: 992px) {
   .container {

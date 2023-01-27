@@ -163,11 +163,24 @@
         </nav>
       </div>
     </header>
-    <section class="banner">
-      <div class="slide">
-        <a href="#"><img src="img/banner-1.jpg" alt="" /></a>
-      </div>
-    </section>
-    <script src="js/index.js"></script>
+    <script>
+      function check() {
+        let menu = document.getElementById("header-menu").checked;
+        let mobileMenu = document.getElementById("mobile-menu");
+        if (menu === false) {
+          mobileMenu.style.display = "block";
+        } else {
+          mobileMenu.style.display = "none";
+        }
+      }
+      const products = document.querySelector("#has-submenu");
+      const pro_icon = document.querySelector("#product-icon");
+      products.addEventListener("mouseover", (event) => {
+        pro_icon.classList.add("rotate-add");
+      });
+      products.addEventListener("mouseout", (event) => {
+        pro_icon.classList.add("rotate-remove");
+      });
+    </script>
   </body>
 </html>

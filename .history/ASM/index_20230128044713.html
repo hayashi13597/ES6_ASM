@@ -140,7 +140,7 @@
             <li><a href="#">Hướng dẫn</a></li>
             <li class="has-submenu" id="has-submenu">
               <a href="#"
-                >Sản phẩm<i class="bx bx-chevron-down" id="product-icon"></i
+                >Sản phẩm<i class="bx bx-chevron-down" id=" product-icon"></i
               ></a>
               <ul class="submenu">
                 <li><a href="#">Hàng có sẵn</a></li>
@@ -163,11 +163,22 @@
         </nav>
       </div>
     </header>
-    <section class="banner">
-      <div class="slide">
-        <a href="#"><img src="img/banner-1.jpg" alt="" /></a>
-      </div>
-    </section>
-    <script src="js/index.js"></script>
+    <script>
+      function check() {
+        let menu = document.getElementById("header-menu").checked;
+        let mobileMenu = document.getElementById("mobile-menu");
+        if (menu === false) {
+          mobileMenu.style.display = "block";
+        } else {
+          mobileMenu.style.display = "none";
+        }
+      }
+      const products = document.querySelector(".has-submenu");
+      const pro_icon = document.querySelector(".product-icon");
+      products.addEventListener("mouseenter", (event) => {
+        console.log(pro_icon);
+        console.log(event.target.className);
+      });
+    </script>
   </body>
 </html>
