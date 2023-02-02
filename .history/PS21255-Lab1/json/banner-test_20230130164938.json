@@ -1,0 +1,15 @@
+{
+  "main": [
+    {
+      "img": "banner-30-1.jpg"
+    }
+  ],
+  "secondary": [
+    {
+      "img": "banner-30-2.jpg"
+    },
+    {
+      "img": "banner-30-3.jpg"
+    }
+  ]
+}

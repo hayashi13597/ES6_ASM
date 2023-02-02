@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="banner-item item1">
+        <img src="img/banner-30-1.jpg" alt="" />
+      </div>
+      <div class="banner-item item2">
+        <img src="img/banner-30-2.jpg" alt="" />
+      </div>
+      <div class="banner-item item3">
+        <img src="img/banner-30-3.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      fetch("./json/cate-menu.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const menu = data
+            .map((item) => {
+              if (item.submenu) {
+                return `<div class="nav-item dropdown dropright">
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+          ${item.menu}<i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+          <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+        ${item.submenu
+          .map((element) => {
+            return `<a href="" class="dropdown-item">${element}</a>`;
+          })
+          .join("")}
+          </div>
+        </div>`;
+              } else {
+                return `<a href="${ChangeToSlug(
+                  item.menu
+                )}" class="nav-item nav-link">${item.menu}</a>`;
+              }
+            })
+            .join("");
+          document.getElementById("menu-list").innerHTML = menu;
+        });
+    </script>
+  </body>
+</html>
