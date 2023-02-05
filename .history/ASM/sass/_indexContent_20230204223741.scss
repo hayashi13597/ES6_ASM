@@ -1,0 +1,143 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.collection {
+  display: flex;
+  gap: 30px;
+}
+.collection-left,
+.collection-right {
+  width: 50%;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: hsla(0, 0%, 100%, 0.7);
+  }
+  &:hover {
+    &::before,
+    &::after {
+      animation: before-hover 0.55s ease-in;
+    }
+    img {
+      scale: 1.1;
+    }
+  }
+}
+@keyframes before-hover {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+.collection-left,
+.collection-right {
+  &__img a {
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease;
+    }
+  }
+  &__text {
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .tagline {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .htitle {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .txtdesc {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .collection-btn {
+      font-size: 12px;
+      border-radius: 4px;
+      font-weight: 500;
+      background-color: #333;
+      border: none;
+      outline: none;
+      overflow: hidden;
+      a {
+        display: block;
+        padding: 8px 20px 8px 25px;
+        text-decoration: none;
+        color: #ffff;
+        background-color: transparent;
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: red;
+          z-index: -1;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
