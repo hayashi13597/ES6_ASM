@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figure Shop</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Link icon Boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-topbar">
+        <strong>Freeship</strong> toàn quốc với đơn hàng từ
+        <span class="header-topbar__btn">1000K</span>
+      </div>
+      <div class="container">
+        <div class="header-middle">
+          <div class="header-mobile__menu">
+            <div class="mobile-meu__icon">
+              <label for="header-menu"
+                ><i class="bx bx-menu" onclick="check()"></i
+              ></label>
+            </div>
+            <input type="checkbox" hidden id="header-menu" class="nav-input" />
+            <div class="mobile-menu" id="mobile-menu">
+              <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li class="has-submenu">
+                  <a href="#">Sản phẩm</a>
+                </li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Ưu đãi</a></li>
+                <li><a href="#">Kết nối</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <a class="header-middle__logo" href="#"
+            ><img src="img/jewelry.png" alt=""
+          /></a>
+          <div class="header-middle__input">
+            <input
+              type="text"
+              placeholder="Nhập sản phẩm bạn muốn tìm kiếm...?"
+            />
+            <button class="search__btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <div class="header-search__wrap">
+              <div class="search-result">
+                <div class="search-result__text">
+                  <a href="#">Ako</a>
+                  <span>3,830,000</span>
+                </div>
+                <div class="search-result__img">
+                  <img src="img/ako_1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="search-result">
+                <div class="search-result__text">
+                  <a href="#">Ako</a>
+                  <span>3,830,000</span>
+                </div>
+                <div class="search-result__img">
+                  <img src="img/ako_1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-middle__action">
+            <div class="action__account">
+              <div class="account__icon">
+                <img src="img/bx-user.svg" alt="" />
+              </div>
+              <div class="account__text">
+                <div class="text-up">Đăng nhập / Đăng ký</div>
+                <div class="text-down">
+                  Tài khoản của tôi
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="action__cart">
+              <div class="cart__icon">
+                <img src="img/bx-cart.svg" alt="" />
+                <span class="cart__number">0</span>
+              </div>
+              <div class="cart__text">Giỏ hàng</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-middle__input search-mobile">
+          <input
+            type="text"
+            placeholder="Nhập sản phẩm bạn muốn tìm kiếm...?"
+          />
+          <button class="search__btn">
+            <i class="bx bx-search"></i>
+          </button>
+          <div class="header-search__wrap">
+            <div class="search-result">
+              <div class="search-result__text">
+                <a href="#">Ako</a>
+                <span>3,830,000</span>
+              </div>
+              <div class="search-result__img">
+                <img src="img/ako_1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="search-result">
+              <div class="search-result__text">
+                <a href="#">Ako</a>
+                <span>3,830,000</span>
+              </div>
+              <div class="search-result__img">
+                <img src="img/ako_1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Hướng dẫn</a></li>
+            <li class="has-submenu" id="has-submenu">
+              <a href="#"
+                >Sản phẩm<i class="bx bx-chevron-down" id="product-icon"></i
+              ></a>
+              <ul class="submenu">
+                <li><a href="#">Hàng có sẵn</a></li>
+                <li><a href="#">Hàng order</a></li>
+                <li><a href="#">Scale Figure</a></li>
+                <li><a href="#">Nendoroid</a></li>
+                <li><a href="#">Pop up Parade</a></li>
+                <li><a href="#">Figma</a></li>
+                <li><a href="#">R18</a></li>
+                <li><a href="#">Các loại figure khác</a></li>
+                <li><a href="#">Artbook</a></li>
+                <li><a href="#">Fidget Spinner</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Ưu đãi</a></li>
+            <li><a href="#">Kết nối</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="img/banner-1.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="img/banner-2.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="img/banner-3.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="img/banner-4.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="collection">
+        <div class="collection-left">
+          <div class="collection-left__img">
+            <a href="#"><img src="img/section-icon-1.jpg" alt="" /></a>
+          </div>
+          <div class="collection-left__text">
+            <p class="tagline">Bộ sưu tập</p>
+            <h2 class="htitle">Nendoroid</h2>
+            <p class="txtdesc">
+              Dòng chibi figure được yêu thích nhất, nhiều gương mặt, thoả sức
+              tạo dáng
+            </p>
+            <button class="collection-btn">
+              <a href="#">Xem ngay <i class="bx bx-chevron-right"></i></a>
+            </button>
+          </div>
+        </div>
+        <div class="collection-right">
+          <div class="collection-right__img">
+            <a href="#"><img src="img/section-icon-2.jpg" alt="" /></a>
+          </div>
+          <div class="collection-right__text">
+            <p class="tagline">Bộ sưu tập</p>
+            <h2 class="htitle">Pop Up Parade</h2>
+            <p class="txtdesc">
+              Dòng scale figure kích thước sinh viên, giá tiểu học
+            </p>
+            <button class="collection-btn">
+              <a href="#">Xem ngay <i class="bx bx-chevron-right"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="orders">
+        <div class="orders-heading">
+          <h2 class="htitle">
+            <a href="#">Sản phẩm Order</a>
+          </h2>
+          <p class="subTitle">
+            Những sản phẩm đã hoặc sắp phát hành & cần đặt trước
+          </p>
+        </div>
+        <div class="orders-content">
+          <div class="orders-content__banner">
+            <a href="#">
+              <img src="img/order-banner.jpg" />
+            </a>
+          </div>
+          <div class="orders-content__products">
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-1.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-1-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#"
+                      >Final Fantasy VII Remake Adorable Arts Aerith
+                      Gainsborough</a
+                    >
+                  </h3>
+                  <p class="item-detail__price">2,150,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-2.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-2-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Nendoroid Doll Chainsaw Man Power</a>
+                  </h3>
+                  <p class="item-detail__price">1,650,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-3.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-3-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Nendoroid Doll Chainsaw Man Denji</a>
+                  </h3>
+                  <p class="item-detail__price">1,650,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-4.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-4-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Nendoroid Tokyo Revengers Takashi Mitsuya</a>
+                  </h3>
+                  <p class="item-detail__price">1,450,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-5.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-5-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Nendoroid OMORI Basil</a>
+                  </h3>
+                  <p class="item-detail__price">1,650,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-6.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-6-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#"
+                      >Movie Compilation "SSSS.GRIDMAN" Rikka Takarada
+                      Articulated Plastic Model Kit</a
+                    >
+                  </h3>
+                  <p class="item-detail__price">1,950,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="orders-heading">
+          <h2 class="htitle">
+            <a href="#">Sản phẩm có sẳn</a>
+          </h2>
+          <p class="subTitle">Sản phẩm đang có sẵn, bạn có thể mua ngay</p>
+        </div>
+        <div class="orders-content">
+          <div class="orders-content__products">
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-7.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-7-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Sakura Saber 1/8 - Good Smile Company</a>
+                  </h3>
+                  <p class="item-detail__price">3,200,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-8.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-8-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#"
+                      >Evangelion: 3.0+1.0 Thrice Upon a Time Mari Makinami
+                      Illustrious White Plugsuit ver. 1/6</a
+                    >
+                  </h3>
+                  <p class="item-detail__price">3,000,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-9.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-9-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#"
+                      >Nendoroid Kantai Collection -Kan Colle- Takao</a
+                    >
+                  </h3>
+                  <p class="item-detail__price">1,400,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-10.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-10-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Racing Miku 2015 Ver 1/8 Good Smile Company</a>
+                  </h3>
+                  <p class="item-detail__price">2,800,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-row">
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-11.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-11-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#"
+                      >Final Fantasy VII Remake STATIC ARTS Tifa Lockhart -Dress
+                      Ver.-</a
+                    >
+                  </h3>
+                  <p class="item-detail__price">4,800,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row-item">
+                <div class="item-img">
+                  <a class="nothover" href="#"
+                    ><img src="img/order-12.jpg" alt=""
+                  /></a>
+                  <a class="whenhover" href="#"
+                    ><img src="img/order-12-1.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-detail">
+                  <h3>
+                    <a href="#">Nendoroid Nekopara Chocola</a>
+                  </h3>
+                  <p class="item-detail__price">1,800,000đ</p>
+                </div>
+                <div class="item-action">
+                  <button class="item-action__btn">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="orders-content__banner">
+            <a href="#">
+              <img src="img/order-banner-1.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner-full">
+      <a href="#">
+        <img src="img/section-banner-full.jpg" alt="" />
+      </a>
+    </section>
+    <section class="container scale-figure">
+      <div class="scale-figure__heading orders-heading">
+        <h2 class="htitle">
+          <a href="#">Scale Figure</a>
+        </h2>
+        <p class="subTitle">Những figure được chế tác theo tỉ lệ chuẩn</p>
+      </div>
+      <div class="figure-content">
+        <div class="figure-content__products">
+          <div class="product-col">
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-1.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-1-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >POP UP PARADE Rascal Does Not Dream of Bunny Girl Senpai
+                    Mai Sakurajima</a
+                  >
+                </h3>
+                <p class="item-detail__price">1,600,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-2.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-2-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#">TRANSFORMERS Bishoujo Transformers Bumble 1/7</a>
+                </h3>
+                <p class="item-detail__price">4,800,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-3.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-3-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >Is It Wrong to Try to Pick Up Girls in a Dungeon? IV Hestia
+                    -Shiromuku- 1/7</a
+                  >
+                </h3>
+                <p class="item-detail__price">12,700,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-4.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-4-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >POP UP PARADE Satoru Gojo Movie Jujutsu Kaisen 0 Ver.</a
+                  >
+                </h3>
+                <p class="item-detail__price">1,600,000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-col">
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-5.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-5-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >Crisis Core: Final Fantasy VII Reunion PLAY ARTS Kai Zack
+                    Soldier Class 1st</a
+                  >
+                </h3>
+                <p class="item-detail__price">5,450,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-6.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-6-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#">TENITOL Haikyuu!! Shoyo Hinata</a>
+                </h3>
+                <p class="item-detail__price">2,200,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-7.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-7-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >POP UP PARADE Suguru Geto Movie Jujutsu Kaisen 0 Ver.</a
+                  >
+                </h3>
+                <p class="item-detail__price">1,600,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-8.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-8-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >18+ Ushi Musume -First Try at Cosplay!- illustration by
+                    POPQN 1/6</a
+                  >
+                </h3>
+                <p class="item-detail__price">6,000,000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-col">
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-9.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-9-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#">FairyTale-Another March Hare 1/8</a>
+                </h3>
+                <p class="item-detail__price">7,750,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-10.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-10-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#">A-Z: [E] 1/7</a>
+                </h3>
+                <p class="item-detail__price">5,280,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-11.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-11-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#">18+ RASETHUHIME -SAKI- M-edition 1/5</a>
+                </h3>
+                <p class="item-detail__price">11,500,000đ</p>
+              </div>
+            </div>
+            <div class="col-item">
+              <div class="col-item__img">
+                <a class="nothover" href="#"
+                  ><img src="img/scale-12.jpg" alt=""
+                /></a>
+                <a class="whenhover" href="#"
+                  ><img src="img/scale-12-1.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-item__detail">
+                <h3>
+                  <a href="#"
+                    >Atelier Ryza 2: Lost Legends & the Secret Fairy Ryza
+                    (Reisalin Stout) High Summer Formal Ver. 1/6</a
+                  >
+                </h3>
+                <p class="item-detail__price">5,200,000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-services">
+      <div class="container">
+        <div class="row-services">
+          <div class="box-service">
+            <div class="box-service__img">
+              <img src="img/service-1.jpg" alt="" />
+            </div>
+            <div class="box-service__content">
+              <h4>Sản phẩm chính hãng</h4>
+              <div class="txt-desc">Nhập khẩu trực tiếp từ Nhật Bản</div>
+              <a href="#">Xem chi tiết <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="box-service">
+            <div class="box-service__img">
+              <img src="img/service-2.jpg" alt="" />
+            </div>
+            <div class="box-service__content">
+              <h4>Thanh toán đơn giản</h4>
+              <div class="txt-desc">Chuyển khoản hoặc COD</div>
+              <a href="#">Xem chi tiết <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="box-service">
+            <div class="box-service__img">
+              <img src="img/service-3.jpg" alt="" />
+            </div>
+            <div class="box-service__content">
+              <h4>Giao hàng nhanh chóng</h4>
+              <div class="txt-desc">Miễn phí với đơn hàng >1000K</div>
+              <a href="#">Xem chi tiết <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-blog">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="hTitle">
+            <a href="#">Dành cho người mới bắt đầu</a>
+          </h2>
+          <p class="subTitle">Hướng dẫn cơ bản</p>
+        </div>
+        <div class="blog-content blogSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="blog-item">
+                <div class="blog-item__img">
+                  <img src="img/blog-1.jpg" alt="" />
+                </div>
+                <div class="blog-item__detail">
+                  <h3 class="art-title">
+                    <a href="#"
+                      >Theo dõi lịch phát hành Japan Figure từ chính hãng</a
+                    >
+                  </h3>
+                  <div class="art-excerpt">
+                    LỊCH PHÁT HÀNH FIGURE Cập nhật nhanh nhất - chính xác nhất
+                    ngay tại trang chính hãng Good Smile Company xem tại đây
+                    Kotobukiya xem tại đây Alter xem tại đây Megehouse xem tại
+                    đây Max Factory xem tại đây FREEing xem tại đây Brocoli xem
+                    tại đây
+                  </div>
+                  <p class="art-link">
+                    <a href="#">
+                      <span class="icon-plus">
+                        <i class="bx bx-plus i-index"></i>
+                      </span>
+                      Xem thêm
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-item">
+                <div class="blog-item__img">
+                  <img src="img/blog-2.jpg" alt="" />
+                </div>
+                <div class="blog-item__detail">
+                  <h3 class="art-title">
+                    <a href="#">Khi nào 1 figure "có" tại Nhật Bản?</a>
+                  </h3>
+                  <div class="art-excerpt">
+                    KHI NÀO 1 FIGURE "CÓ" TẠI NHẬT BẢN?KHI "CÓ" THÌ SỐ LƯỢNG
+                    NHIỀU KHÔNG?"CÓ" RỒI MỚI ĐẶT LIỆU KỊP KHÔNG? Đây là những
+                    câu hỏi được rất nhiều bạn quan tâm.Trước tiên, Figure
+                    Nhật...
+                  </div>
+                  <p class="art-link">
+                    <a href="#">
+                      <span class="icon-plus">
+                        <i class="bx bx-plus i-index"></i>
+                      </span>
+                      Xem thêm
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-item">
+                <div class="blog-item__img">
+                  <img src="img/blog-3.jpg" alt="" />
+                </div>
+                <div class="blog-item__detail">
+                  <h3 class="art-title">
+                    <a href="#"
+                      >Kakeibo phương pháp tiết kiệm, chi tiêu hợp lý</a
+                    >
+                  </h3>
+                  <div class="art-excerpt">
+                    Thận nhiêu/ trái?Bán máu bao nhiêu cho đủ?Lại tốn tiền nữa
+                    rồi...Những câu hỏi quen thuộc đều nhằm vào 1 vấn đề chung:
+                    Làm sao để chi tiêu hợp lí,...
+                  </div>
+                  <p class="art-link">
+                    <a href="#">
+                      <span class="icon-plus">
+                        <i class="bx bx-plus i-index"></i>
+                      </span>
+                      Xem thêm
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-item">
+                <div class="blog-item__img">
+                  <img src="img/blog-1.jpg" alt="" />
+                </div>
+                <div class="blog-item__detail">
+                  <h3 class="art-title">
+                    <a href="#"
+                      >Theo dõi lịch phát hành Japan Figure từ chính hãng</a
+                    >
+                  </h3>
+                  <div class="art-excerpt">
+                    LỊCH PHÁT HÀNH FIGURE Cập nhật nhanh nhất - chính xác nhất
+                    ngay tại trang chính hãng Good Smile Company xem tại đây
+                    Kotobukiya xem tại đây Alter xem tại đây Megehouse xem tại
+                    đây Max Factory xem tại đây FREEing xem tại đây Brocoli xem
+                    tại đây
+                  </div>
+                  <p class="art-link">
+                    <a href="#">
+                      <span class="icon-plus">
+                        <i class="bx bx-plus i-index"></i>
+                      </span>
+                      Xem thêm
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+    <!-- Swiper slice header -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slide-swiper.js"></script>
+  </body>
+</html>
