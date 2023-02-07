@@ -20,4 +20,8 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".blogSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination-blog",
+    clickable: true,
+  },
 });
