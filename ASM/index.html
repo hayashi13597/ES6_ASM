@@ -95,24 +95,183 @@
             </div>
           </div>
           <div class="header-middle__action">
-            <div class="action__account">
-              <div class="account__icon">
-                <img src="img/bx-user.svg" alt="" />
+            <div class="header__account" id="showLogin">
+              <div class="box-account">
+                <div class="account__icon">
+                  <img src="img/bx-user.svg" alt="" />
+                </div>
+                <div class="account__text">
+                  <div class="text-up">Đăng nhập / Đăng ký</div>
+                  <div class="text-down">
+                    Tài khoản của tôi
+                    <i class="bx bx-chevron-down"></i>
+                  </div>
+                </div>
               </div>
-              <div class="account__text">
-                <div class="text-up">Đăng nhập / Đăng ký</div>
-                <div class="text-down">
-                  Tài khoản của tôi
-                  <i class="bx bx-chevron-down"></i>
+              <div class="box-login">
+                <span class="box-triangle"></span>
+                <div class="box-login__heading">
+                  <h2 class="box-login__heading--title">Đăng nhập tài khoản</h2>
+                  <p class="box-login__heading--legend">
+                    Nhập email và mật khẩu của bạn:
+                  </p>
+                </div>
+                <div class="box-login__inner">
+                  <form action="">
+                    <div class="form-input">
+                      <input
+                        type="email"
+                        id="input-email"
+                        class="form-field"
+                        required
+                      />
+                      <label for="input-email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-input">
+                      <input
+                        type="password"
+                        id="input-password"
+                        class="form-field"
+                        required
+                      />
+                      <label for="input-password" class="form-label"
+                        >Mật khẩu</label
+                      >
+                      <div class="box__recaptcha">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="#">Privacy Policy</a> and
+                        <a href="#">Terms of Service</a> apply.
+                      </div>
+                    </div>
+                    <button type="submit" class="button form-submit">
+                      Đăng nhập
+                    </button>
+                  </form>
+                  <div class="box-login__action">
+                    <p>
+                      Khách hàng mới? <a href="#" class="link">Tạo tài khoản</a>
+                    </p>
+                    <p>
+                      Quên mật khẩu?
+                      <a href="#" class="link">Khôi phục mật khẩu</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="action__cart">
-              <div class="cart__icon">
-                <img src="img/bx-cart.svg" alt="" />
-                <span class="cart__number">0</span>
+            <div class="header__cart">
+              <div class="header__cart--text">
+                <div class="cart__icon">
+                  <img src="img/bx-cart.svg" alt="" />
+                  <span class="cart__number">0</span>
+                </div>
+                <div class="cart__text">Giỏ hàng</div>
               </div>
-              <div class="cart__text">Giỏ hàng</div>
+              <div class="cart-dropdown">
+                <span class="box-triangle"></span>
+                <div class="cart-dropdown__content">
+                  <p class="box-title">Giỏ hàng</p>
+                  <div class="cart-view clearfix">
+                    <div class="cart-view-scroll">
+                      <table style="display: none">
+                        <tbody>
+                          <tr class="mini-cart__item">
+                            <td class="mini-cart__left">
+                              <a href="#">
+                                <img
+                                  src="https://product.hstatic.net/1000160337/product/nendoroid_sk8_the_infinity_reki__5__0ce37453683a4779a37c4d92776e4c5a_small.jpg"
+                                  alt=""
+                                />
+                              </a>
+                            </td>
+                            <td class="mini-cart__right">
+                              <p class="mini-cart__title">
+                                <a href="#">
+                                  Nendoroid SK8 the Infinity Reki
+                                </a>
+                              </p>
+                              <div class="mini-cart__quantity">
+                                <span class="mnc-value">1</span>
+                              </div>
+                              <div class="mini-cart__price">
+                                <span class="mnc-price">2,000,000đ</span>
+                              </div>
+                              <div class="mini-cart__remove">
+                                <a href="">
+                                  <svg
+                                    width="80px"
+                                    height="80px"
+                                    viewBox="0 0 1024 1024"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      fill="#000000"
+                                      d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table>
+                        <tbody>
+                          <tr class="mini-cart__empty">
+                            <td>
+                              <div class="svgico-mini-cart">
+                                <svg
+                                  width="81"
+                                  height="70"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                >
+                                  <g id="icomoon-ignore"></g>
+                                  <path
+                                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                                    fill="#000000"
+                                  ></path>
+                                </svg>
+                              </div>
+                              Hiện chưa có sản phẩm
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="cart-view-line"></div>
+                    <div class="cart-view-total">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="mnc-total text-left">TỔNG TIỀN:</td>
+                            <td
+                              class="mnc-total text-right"
+                              id="total-view-cart"
+                            >
+                              0đ
+                            </td>
+                          </tr>
+                          <tr class="mini-cart__button">
+                            <td>
+                              <a href="#" class="linktocart button"
+                                >Xem giỏ hàng</a
+                              >
+                            </td>
+                            <td>
+                              <a href="#" class="linktocheckout button btnred"
+                                >Thanh toán</a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -248,8 +407,8 @@
                 <img src="img/order-banner.jpg" />
               </a>
             </div>
-            <div class="orders-content__products">
-              <div class="product-row">
+            <div class="orders-content__products" id="product-orders">
+              <!-- <div class="product-row">
                 <div class="row-item">
                   <div class="item-img">
                     <a class="nothover" href="#"
@@ -261,15 +420,17 @@
                   </div>
                   <div class="item-detail">
                     <h3>
-                      <a href="#"
+                      <a href="#" id="product-name"
                         >Final Fantasy VII Remake Adorable Arts Aerith
                         Gainsborough</a
                       >
                     </h3>
-                    <p class="item-detail__price">2,150,000đ</p>
+                    <p class="item-detail__price" id="product-price">
+                      2,150,000đ
+                    </p>
                   </div>
                   <div class="item-action">
-                    <button class="item-action__btn">
+                    <button class="item-action__btn" id="add-cart">
                       <i class="bx bx-cart-alt"></i>
                     </button>
                   </div>
@@ -386,7 +547,7 @@
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -398,8 +559,8 @@
             <p class="subTitle">Sản phẩm đang có sẵn, bạn có thể mua ngay</p>
           </div>
           <div class="orders-content">
-            <div class="orders-content__products">
-              <div class="product-row">
+            <div class="orders-content__products" id="prod-available">
+              <!-- <div class="product-row">
                 <div class="row-item">
                   <div class="item-img">
                     <a class="nothover" href="#"
@@ -540,7 +701,7 @@
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="orders-content__banner">
               <a href="#">
@@ -563,8 +724,8 @@
           <p class="subTitle">Những figure được chế tác theo tỉ lệ chuẩn</p>
         </div>
         <div class="figure-content">
-          <div class="figure-content__products">
-            <div class="product-col">
+          <div class="figure-content__products" id="scale-figures">
+            <!-- <div class="product-col">
               <div class="col-item">
                 <div class="col-item__img">
                   <a class="nothover" href="#"
@@ -782,7 +943,7 @@
                   <p class="item-detail__price">5,200,000đ</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -1073,9 +1234,23 @@
         </div>
       </div>
     </footer>
+    <div
+      class="back-to-top"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        />
+      </svg>
+    </div>
     <script src="js/index.js"></script>
     <!-- Swiper slice header -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slide-swiper.js"></script>
+    <!-- fetch script -->
+    <script src="js/fetch.js"></script>
   </body>
 </html>

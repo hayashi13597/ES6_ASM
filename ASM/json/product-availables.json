@@ -1,0 +1,44 @@
+[
+  {
+    "id": 7,
+    "img1": "order-7.jpg",
+    "img2": "order-7-1.jpg",
+    "name": "Sakura Saber 1/8 - Good Smile Company",
+    "price": "3,200,000"
+  },
+  {
+    "id": 8,
+    "img1": "order-8.jpg",
+    "img2": "order-8-1.jpg",
+    "name": "Evangelion: 3.0+1.0 Thrice Upon a Time Mari Makinami Illustrious White Plugsuit ver. 1/6",
+    "price": "3,000,000"
+  },
+  {
+    "id": 9,
+    "img1": "order-9.jpg",
+    "img2": "order-9-1.jpg",
+    "name": "Nendoroid Kantai Collection -Kan Colle- Takao",
+    "price": "1,400,000đ"
+  },
+  {
+    "id": 10,
+    "img1": "order-10.jpg",
+    "img2": "order-10-1.jpg",
+    "name": "Racing Miku 2015 Ver 1/8 Good Smile Company",
+    "price": "2,800,000"
+  },
+  {
+    "id": 11,
+    "img1": "order-11.jpg",
+    "img2": "order-11-1.jpg",
+    "name": "Final Fantasy VII Remake STATIC ARTS Tifa Lockhart -Dress Ver.-",
+    "price": "4,800,000"
+  },
+  {
+    "id": 12,
+    "img1": "order-12.jpg",
+    "img2": "order-12-1.jpg",
+    "name": "Nendoroid Nekopara Chocola",
+    "price": "1,800,000"
+  }
+]
