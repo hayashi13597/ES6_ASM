@@ -510,10 +510,7 @@ th {
   height: 20px;
   line-height: 20px;
   display: block;
-}
-.header-middle__action .header__cart .cart-dropdown__content .cart-view-scroll .mini-cart__item .mini-cart__right .mini-cart__remove a svg {
-  width: 100%;
-  height: 100%;
+  color: #000000;
 }
 .header-middle__action .header__cart .cart-dropdown__content .cart-view-scroll .mini-cart__empty td {
   padding-top: 0;
@@ -543,6 +540,11 @@ th {
   color: #252a2b;
   padding: 10px 0;
   font-size: 14px;
+}
+.header-middle__action .header__cart .cart-dropdown__content .cart-view-total #total-view-cart {
+  font-weight: 600;
+  font-size: 16px;
+  color: red;
 }
 .header-middle__action .header__cart .cart-dropdown__content .cart-view-total .text-left {
   text-align: left;
@@ -624,6 +626,28 @@ th {
   transform: scale(1);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s linear;
 }
+.header-fixed {
+  position: relative;
+}
+.header-fixed .header-middle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 13%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.header-fixed .header-nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+.header-nav {
+  padding: 5px 0;
+}
 .header-nav > ul {
   list-style: none;
   display: flex;
@@ -657,6 +681,36 @@ th {
 .header-nav > ul > li > a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+.header-nav__fixed {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  top: 8px;
+  background-color: #fff;
+}
+.header-nav__fixed__logo {
+  display: flex;
+}
+.header-nav__fixed > ul {
+  flex: 1 1 auto;
+  gap: 15px;
+}
+.header-nav__fixed .header-nav__logo {
+  display: block;
+}
+.header-nav__logo {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #ed1c24;
+  display: none;
+}
+.header-nav__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .clearfix {
@@ -1085,14 +1139,12 @@ th {
   transition: bottom 0.3s linear;
 }
 .orders-content__products .product-row .row-item .item-action__btn {
-  padding: 0 5px;
   font-size: 18px;
   font-weight: 500;
   display: block;
   width: 100%;
   border: 2px solid #000000;
   height: 34px;
-  line-height: 34px;
   border-radius: 5px;
   background-color: #000000;
   color: #fff;
@@ -1101,6 +1153,8 @@ th {
 }
 .orders-content__products .product-row .row-item .item-action__btn i {
   position: relative;
+  display: block;
+  line-height: 32px;
 }
 .orders-content__products .product-row .row-item .item-action__btn:before {
   position: absolute;

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "img1": "order-1.jpg",
+    "img2": "order-1-1.jpg",
+    "name": "Final Fantasy VII Remake Adorable Arts Aerith Gainsborough",
+    "price": "2,150,000"
+  },
+  {
+    "id": 2,
+    "img1": "order-2.jpg",
+    "img2": "order-2-1.jpg",
+    "name": "Nendoroid Doll Chainsaw Man Power",
+    "price": "1,650,000"
+  },
+  {
+    "id": 3,
+    "img1": "order-3.jpg",
+    "img2": "order-3-1.jpg",
+    "name": "Nendoroid Doll Chainsaw Man Denji",
+    "price": "1,650,000"
+  },
+  {
+    "id": 4,
+    "img1": "order-4.jpg",
+    "img2": "order-4-1.jpg",
+    "name": "Nendoroid Tokyo Revengers Takashi Mitsuya",
+    "price": "1,450,000"
+  },
+  {
+    "id": 5,
+    "img1": "order-5.jpg",
+    "img2": "order-5-1.jpg",
+    "name": "Nendoroid OMORI Basil",
+    "price": "1,650,000"
+  },
+  {
+    "id": 6,
+    "img1": "order-6.jpg",
+    "img2": "order-6-1.jpg",
+    "name": "Movie Compilation 'SSSS.GRIDMAN' Rikka Takarada Articulated Plastic Model Kit",
+    "price": "1,950,000"
+  },
+  {
+    "id": 7,
+    "img1": "order-7.jpg",
+    "img2": "order-7-1.jpg",
+    "name": "Sakura Saber 1/8 - Good Smile Company",
+    "price": "3,200,000"
+  },
+  {
+    "id": 8,
+    "img1": "order-8.jpg",
+    "img2": "order-8-1.jpg",
+    "name": "Evangelion: 3.0+1.0 Thrice Upon a Time Mari Makinami Illustrious White Plugsuit ver. 1/6",
+    "price": "3,000,000"
+  },
+  {
+    "id": 9,
+    "img1": "order-9.jpg",
+    "img2": "order-9-1.jpg",
+    "name": "Nendoroid Kantai Collection -Kan Colle- Takao",
+    "price": "1,400,000đ"
+  },
+  {
+    "id": 10,
+    "img1": "order-10.jpg",
+    "img2": "order-10-1.jpg",
+    "name": "Racing Miku 2015 Ver 1/8 Good Smile Company",
+    "price": "2,800,000"
+  },
+  {
+    "id": 11,
+    "img1": "order-11.jpg",
+    "img2": "order-11-1.jpg",
+    "name": "Final Fantasy VII Remake STATIC ARTS Tifa Lockhart -Dress Ver.-",
+    "price": "4,800,000"
+  },
+  {
+    "id": 12,
+    "img1": "order-12.jpg",
+    "img2": "order-12-1.jpg",
+    "name": "Nendoroid Nekopara Chocola",
+    "price": "1,800,000"
+  },
+  {
+    "id": 13,
+    "img1": "scale-1.jpg",
+    "img2": "scale-1-1.jpg",
+    "name": "POP UP PARADE Rascal Does Not Dream of Bunny Girl Senpai Mai Sakurajima",
+    "price": "1,600,000"
+  },
+  {
+    "id": 14,
+    "img1": "scale-2.jpg",
+    "img2": "scale-2-1.jpg",
+    "name": "TRANSFORMERS Bishoujo Transformers Bumble 1/7",
+    "price": "4,800,000"
+  },
+  {
+    "id": 15,
+    "img1": "scale-3.jpg",
+    "img2": "scale-3-1.jpg",
+    "name": "Is It Wrong to Try to Pick Up Girls in a Dungeon? IV Hestia -Shiromuku- 1/7",
+    "price": "12,700,000"
+  },
+  {
+    "id": 16,
+    "img1": "scale-4.jpg",
+    "img2": "scale-4-1.jpg",
+    "name": "POP UP PARADE Satoru Gojo Movie Jujutsu Kaisen 0 Ver.",
+    "price": "1,600,000"
+  },
+  {
+    "id": 17,
+    "img1": "scale-5.jpg",
+    "img2": "scale-5-1.jpg",
+    "name": "Crisis Core: Final Fantasy VII Reunion PLAY ARTS Kai Zack Soldier Class 1st",
+    "price": "5,450,000"
+  },
+  {
+    "id": 18,
+    "img1": "scale-6.jpg",
+    "img2": "scale-6-1.jpg",
+    "name": "TENITOL Haikyuu!! Shoyo Hinata",
+    "price": "2,200,000"
+  },
+  {
+    "id": 19,
+    "img1": "scale-7.jpg",
+    "img2": "scale-7-1.jpg",
+    "name": "POP UP PARADE Suguru Geto Movie Jujutsu Kaisen 0 Ver.",
+    "price": "1,600,000"
+  },
+  {
+    "id": 20,
+    "img1": "scale-8.jpg",
+    "img2": "scale-8-1.jpg",
+    "name": "18+ Ushi Musume -First Try at Cosplay!- illustration by POPQN 1/6",
+    "price": "6,000,000"
+  },
+  {
+    "id": 21,
+    "img1": "scale-9.jpg",
+    "img2": "scale-9-1.jpg",
+    "name": "FairyTale-Another March Hare 1/8",
+    "price": "7,750,000"
+  },
+  {
+    "id": 22,
+    "img1": "scale-10.jpg",
+    "img2": "scale-10-1.jpg",
+    "name": "A-Z: [E] 1/7",
+    "price": "5,280,000"
+  },
+  {
+    "id": 23,
+    "img1": "scale-11.jpg",
+    "img2": "scale-11-1.jpg",
+    "name": "18+ RASETHUHIME -SAKI- M-edition 1/5",
+    "price": "11,500,000"
+  },
+  {
+    "id": 24,
+    "img1": "scale-12.jpg",
+    "img2": "scale-12-1.jpg",
+    "name": "Atelier Ryza 2: Lost Legends & the Secret Fairy Ryza (Reisalin Stout) High Summer Formal Ver. 1/6",
+    "price": "5,200,000"
+  }
+]

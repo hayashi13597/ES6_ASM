@@ -38,7 +38,7 @@
         <strong>Freeship</strong> toàn quốc với đơn hàng từ
         <span class="header-topbar__btn">1000K</span>
       </div>
-      <div class="container">
+      <div class="container" id="header-fixed">
         <div class="header-middle">
           <div class="header-mobile__menu">
             <div class="mobile-meu__icon">
@@ -173,7 +173,7 @@
                   <p class="box-title">Giỏ hàng</p>
                   <div class="cart-view clearfix">
                     <div class="cart-view-scroll">
-                      <table style="display: none">
+                      <!-- <table style="display: none">
                         <tbody>
                           <tr class="mini-cart__item">
                             <td class="mini-cart__left">
@@ -214,10 +214,10 @@
                             </td>
                           </tr>
                         </tbody>
-                      </table>
+                      </table> -->
                       <table>
-                        <tbody>
-                          <tr class="mini-cart__empty">
+                        <tbody id="mini-cart">
+                          <!-- <tr class="mini-cart__empty">
                             <td>
                               <div class="svgico-mini-cart">
                                 <svg
@@ -237,7 +237,7 @@
                               </div>
                               Hiện chưa có sản phẩm
                             </td>
-                          </tr>
+                          </tr> -->
                         </tbody>
                       </table>
                     </div>
@@ -304,7 +304,12 @@
             </div>
           </div>
         </div>
-        <nav class="header-nav">
+        <nav class="header-nav" id="nav-fixed">
+          <div class="header-nav__logo">
+            <a href="#">
+              <img src="img/jewelry.png" alt="" />
+            </a>
+          </div>
           <ul>
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Giới thiệu</a></li>
@@ -1246,11 +1251,11 @@
         />
       </svg>
     </div>
-    <script src="js/index.js"></script>
     <!-- Swiper slice header -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slide-swiper.js"></script>
     <!-- fetch script -->
     <script src="js/fetch.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

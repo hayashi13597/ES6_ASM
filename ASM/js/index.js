@@ -21,8 +21,8 @@ products.addEventListener("mouseout", (event) => {
 });
 //show and hide login and cart
 const showLogin = document.querySelector(".header__account");
-const showCart = document.querySelector(".header__cart");
 const boxAccount = document.querySelector(".box-account");
+const showCart = document.querySelector(".header__cart");
 const boxCart = document.querySelector(".header__cart--text");
 boxAccount.addEventListener("click", () => {
   showLogin.classList.toggle("js-action-show");
@@ -34,11 +34,12 @@ boxCart.addEventListener("click", () => {
 });
 
 // show and hide when scrolling
-let mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
   scrollFunction();
+  fixedHeader();
 };
 function scrollFunction() {
+  let mybutton = document.getElementById("myBtn");
   if (
     document.body.scrollTop > 200 ||
     document.documentElement.scrollTop > 200
@@ -54,3 +55,66 @@ function topFunction() {
   document.body.scrollTop = 0; //safari
   document.documentElement.scrollTop = 0; //chrome, firefox
 }
+//header scroll
+function fixedHeader() {
+  const headerFixed = document.getElementById("header-fixed");
+  const navFixed = document.getElementById("nav-fixed");
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    headerFixed.classList.add("header-fixed");
+    navFixed.classList.add("header-nav__fixed");
+  } else {
+    headerFixed.classList.remove("header-fixed");
+    navFixed.classList.remove("header-nav__fixed");
+  }
+}
+const deleteProduct = (e) => {
+  const dataId = e.getAttribute("data");
+  let products = JSON.parse(sessionStorage.getItem("cart"));
+  const objWithIdIndex = products.findIndex((obj) => obj.id === dataId);
+  if (objWithIdIndex > -1) {
+    products.splice(objWithIdIndex, 1);
+  }
+  if (products.length == 0) {
+    sessionStorage.removeItem("cart");
+  } else {
+    sessionStorage.setItem("cart", JSON.stringify(products));
+  }
+  showAllCart();
+};
+const addProduct = (e) => {
+  let targetGrand = e.parentNode;
+  let detail = targetGrand.previousElementSibling;
+  let imgDiv = detail.previousElementSibling;
+  let img = imgDiv.children[0].firstChild.getAttribute("src");
+  let count = 1;
+  let id = e.getAttribute("data-id");
+  let name = detail.children[0].innerText;
+  let price = detail.children[1].innerText.slice(0, -1);
+  let product = { id, img, name, price, count };
+  let check = true;
+  let cart = JSON.parse(sessionStorage.getItem("cart"));
+  if (cart) {
+    for (const item of cart) {
+      if (item.id == id) {
+        check = false;
+        item.count += 1;
+        break;
+      }
+    }
+    if (check) {
+      cart.push(product);
+    }
+  } else {
+    cart = [];
+    cart.push(product);
+  }
+  sessionStorage.setItem("cart", JSON.stringify(cart));
+  showCart.classList.add("js-action-show");
+  setTimeout(() => {
+    showCart.classList.remove("js-action-show");
+  }, 1000);
+  showAllCart();
+};

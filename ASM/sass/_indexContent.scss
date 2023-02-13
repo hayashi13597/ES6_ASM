@@ -280,14 +280,13 @@
             width: 100%;
             transition: bottom 0.3s linear;
             &__btn {
-              padding: 0 5px;
+              // padding: 0 5px;
               font-size: 18px;
               font-weight: 500;
               display: block;
               width: 100%;
               border: 2px solid $shop-color-button;
               height: 34px;
-              line-height: 34px;
               border-radius: 5px;
               background-color: $shop-color-button;
               color: #fff;
@@ -295,6 +294,8 @@
               position: relative;
               i {
                 position: relative;
+                display: block;
+                line-height: 32px;
               }
               &:before {
                 position: absolute;
