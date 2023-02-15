@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "category": "Square Enix",
     "img1": "order-1.jpg",
     "img2": "order-1-1.jpg",
     "name": "Final Fantasy VII Remake Adorable Arts Aerith Gainsborough",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "category": "Good Smile Company",
     "img1": "order-2.jpg",
     "img2": "order-2-1.jpg",
     "name": "Nendoroid Doll Chainsaw Man Power",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "category": "Good Smile Company",
     "img1": "order-3.jpg",
     "img2": "order-3-1.jpg",
     "name": "Nendoroid Doll Chainsaw Man Denji",
@@ -22,6 +25,7 @@
   },
   {
     "id": 4,
+    "category": "Good Smile Company, Orange Rouge",
     "img1": "order-4.jpg",
     "img2": "order-4-1.jpg",
     "name": "Nendoroid Tokyo Revengers Takashi Mitsuya",
@@ -29,6 +33,7 @@
   },
   {
     "id": 5,
+    "category": "Good Smile Company",
     "img1": "order-5.jpg",
     "img2": "order-5-1.jpg",
     "name": "Nendoroid OMORI Basil",
@@ -36,6 +41,7 @@
   },
   {
     "id": 6,
+    "category": "Alter",
     "img1": "order-6.jpg",
     "img2": "order-6-1.jpg",
     "name": "Movie Compilation 'SSSS.GRIDMAN' Rikka Takarada Articulated Plastic Model Kit",
@@ -43,6 +49,7 @@
   },
   {
     "id": 7,
+    "category": "Good Smile Company",
     "img1": "order-7.jpg",
     "img2": "order-7-1.jpg",
     "name": "Sakura Saber 1/8 - Good Smile Company",
@@ -50,6 +57,7 @@
   },
   {
     "id": 8,
+    "category": "Kotobukiya",
     "img1": "order-8.jpg",
     "img2": "order-8-1.jpg",
     "name": "Evangelion: 3.0+1.0 Thrice Upon a Time Mari Makinami Illustrious White Plugsuit ver. 1/6",
@@ -57,6 +65,7 @@
   },
   {
     "id": 9,
+    "category": "Square Enix",
     "img1": "order-9.jpg",
     "img2": "order-9-1.jpg",
     "name": "Nendoroid Kantai Collection -Kan Colle- Takao",
@@ -64,6 +73,7 @@
   },
   {
     "id": 10,
+    "category": "Good Smile Company",
     "img1": "order-10.jpg",
     "img2": "order-10-1.jpg",
     "name": "Racing Miku 2015 Ver 1/8 Good Smile Company",
@@ -71,6 +81,7 @@
   },
   {
     "id": 11,
+    "category": "Square Enix",
     "img1": "order-11.jpg",
     "img2": "order-11-1.jpg",
     "name": "Final Fantasy VII Remake STATIC ARTS Tifa Lockhart -Dress Ver.-",
@@ -78,6 +89,7 @@
   },
   {
     "id": 12,
+    "category": "Max Factory",
     "img1": "order-12.jpg",
     "img2": "order-12-1.jpg",
     "name": "Nendoroid Nekopara Chocola",
@@ -85,6 +97,7 @@
   },
   {
     "id": 13,
+    "category": "Kotobukiya",
     "img1": "scale-1.jpg",
     "img2": "scale-1-1.jpg",
     "name": "POP UP PARADE Rascal Does Not Dream of Bunny Girl Senpai Mai Sakurajima",
@@ -92,6 +105,7 @@
   },
   {
     "id": 14,
+    "category": "Max Factory",
     "img1": "scale-2.jpg",
     "img2": "scale-2-1.jpg",
     "name": "TRANSFORMERS Bishoujo Transformers Bumble 1/7",
@@ -99,6 +113,7 @@
   },
   {
     "id": 15,
+    "category": "MegaHouse",
     "img1": "scale-3.jpg",
     "img2": "scale-3-1.jpg",
     "name": "Is It Wrong to Try to Pick Up Girls in a Dungeon? IV Hestia -Shiromuku- 1/7",
@@ -106,6 +121,7 @@
   },
   {
     "id": 16,
+    "category": "Squere Enix",
     "img1": "scale-4.jpg",
     "img2": "scale-4-1.jpg",
     "name": "POP UP PARADE Satoru Gojo Movie Jujutsu Kaisen 0 Ver.",
@@ -113,6 +129,7 @@
   },
   {
     "id": 17,
+    "category": "MegaHouse",
     "img1": "scale-5.jpg",
     "img2": "scale-5-1.jpg",
     "name": "Crisis Core: Final Fantasy VII Reunion PLAY ARTS Kai Zack Soldier Class 1st",
@@ -120,6 +137,7 @@
   },
   {
     "id": 18,
+    "category": "Max Factory",
     "img1": "scale-6.jpg",
     "img2": "scale-6-1.jpg",
     "name": "TENITOL Haikyuu!! Shoyo Hinata",
@@ -127,6 +145,7 @@
   },
   {
     "id": 19,
+    "category": "Alter",
     "img1": "scale-7.jpg",
     "img2": "scale-7-1.jpg",
     "name": "POP UP PARADE Suguru Geto Movie Jujutsu Kaisen 0 Ver.",
@@ -134,6 +153,7 @@
   },
   {
     "id": 20,
+    "category": "Squere Enix",
     "img1": "scale-8.jpg",
     "img2": "scale-8-1.jpg",
     "name": "18+ Ushi Musume -First Try at Cosplay!- illustration by POPQN 1/6",
@@ -141,6 +161,7 @@
   },
   {
     "id": 21,
+    "category": "MegaHouse",
     "img1": "scale-9.jpg",
     "img2": "scale-9-1.jpg",
     "name": "FairyTale-Another March Hare 1/8",
@@ -148,6 +169,7 @@
   },
   {
     "id": 22,
+    "category": "Kotobukiya",
     "img1": "scale-10.jpg",
     "img2": "scale-10-1.jpg",
     "name": "A-Z: [E] 1/7",
@@ -155,6 +177,7 @@
   },
   {
     "id": 23,
+    "category": "Squere Enix",
     "img1": "scale-11.jpg",
     "img2": "scale-11-1.jpg",
     "name": "18+ RASETHUHIME -SAKI- M-edition 1/5",
@@ -162,6 +185,7 @@
   },
   {
     "id": 24,
+    "category": "Alter",
     "img1": "scale-12.jpg",
     "img2": "scale-12-1.jpg",
     "name": "Atelier Ryza 2: Lost Legends & the Secret Fairy Ryza (Reisalin Stout) High Summer Formal Ver. 1/6",

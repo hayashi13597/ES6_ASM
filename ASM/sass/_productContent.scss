@@ -113,10 +113,14 @@
               border-right-style: none;
               transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
               transform: rotate(-45deg) scale(0, 0);
-              box-sizing: border-box;
             }
             &:hover {
               color: $shop-color-main;
+            }
+          }
+          .sort-active {
+            &:before {
+              transform: rotate(-45deg) scale(1);
             }
           }
         }
@@ -135,6 +139,7 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
+      padding: 0 15px;
       .layered_filter_title {
         text-transform: uppercase;
         display: inline-block;
@@ -170,7 +175,7 @@
             padding-right: 15px;
             padding-left: 15px;
             float: left;
-            width: 25%;
+            min-width: 30%;
             &-subtitle {
               position: relative;
               font-size: 13px;
@@ -469,6 +474,26 @@
           .current {
             opacity: 1;
           }
+        }
+      }
+    }
+  }
+  .collection-checked-filter {
+    .checked-filter {
+      padding: 0 15px;
+      width: 100%;
+      &-option {
+        font-size: 14px;
+        border: 1px solid $shop-color-border;
+        border-radius: 10px;
+        padding: 5px 10px;
+        width: fit-content;
+        .option-bold {
+          font-weight: 600;
+          margin-right: 10px;
+        }
+        #removeOption {
+          cursor: pointer;
         }
       }
     }

@@ -367,10 +367,10 @@
                 </div>
                 <div class="collection-softly-option">
                   <ul class="sort-by">
-                    <li><span>Giá: Tăng dần</span></li>
-                    <li><span>Giá: Giảm dần</span></li>
-                    <li><span>Tên: A-Z</span></li>
-                    <li><span>Tên: Z-A</span></li>
+                    <li data-value="asc"><span>Giá: Tăng dần</span></li>
+                    <li data-value="desc"><span>Giá: Giảm dần</span></li>
+                    <li data-value="atoz"><span>Tên: A-Z</span></li>
+                    <li data-value="ztoa"><span>Tên: Z-A</span></li>
                   </ul>
                 </div>
               </div>
@@ -565,6 +565,17 @@
             </div>
           </div>
         </div>
+        <div class="collection-checked-filter">
+          <div class="container">
+            <div class="checked-filter" id="checked-filter">
+              <p class="checked-filter-option" style="display: none">
+                Thương hiệu:
+                <span class="option-bold" id="listOption"></span>
+                <i class="fa-solid fa-xmark" id="removeOption"></i>
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="collection-listproduct">
           <div class="container">
             <div class="wraplist-collection">
@@ -751,47 +762,7 @@
         />
       </svg>
     </div>
-    <script>
-      fetch("./json/products.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const html = data
-            .map((item) => {
-              return `<div class="row-item">
-                  <div class="item-img">
-                    <a class="nothover" href="#"
-                      ><img src="img/${item.img1}" alt=""
-                    /></a>
-                    <a class="whenhover" href="#"
-                      ><img src="img/${item.img2}" alt=""
-                    /></a>
-                  </div>
-                  <div class="item-detail">
-                    <h3>
-                      <a href="#" id="product-name"
-                        >${item.name}</a
-                      >
-                    </h3>
-                    <p class="item-detail__price" id="product-price">
-                      ${item.price}đ
-                    </p>
-                  </div>
-                  <div class="item-action">
-                    <button
-                      class="item-action__btn"
-                      id="add-cart"
-                      data-id="${item.id}"
-                      onclick="addProduct(this)"
-                    >
-                      <i class="bx bx-cart-alt"></i>
-                    </button>
-                  </div>
-                </div>`;
-            })
-            .join("");
-          document.getElementById("collection-body").innerHTML = html;
-        });
-    </script>
     <script src="js/index.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>
