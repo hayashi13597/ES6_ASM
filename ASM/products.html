@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tất cả sản phẩm</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/products.css" />
+    <!-- link swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link icon Boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-topbar">
+        <strong>Freeship</strong> toàn quốc với đơn hàng từ
+        <span class="header-topbar__btn">1000K</span>
+      </div>
+      <div class="container" id="header-fixed">
+        <div class="header-middle">
+          <div class="header-mobile__menu">
+            <div class="mobile-meu__icon">
+              <label for="header-menu"
+                ><i class="bx bx-menu" onclick="check()"></i
+              ></label>
+            </div>
+            <input type="checkbox" hidden id="header-menu" class="nav-input" />
+            <div class="mobile-menu" id="mobile-menu">
+              <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li class="has-submenu">
+                  <a href="#">Sản phẩm</a>
+                </li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Ưu đãi</a></li>
+                <li><a href="#">Kết nối</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <a class="header-middle__logo" href="#"
+            ><img src="img/jewelry.png" alt=""
+          /></a>
+          <div class="header-middle__input">
+            <input
+              type="text"
+              placeholder="Nhập sản phẩm bạn muốn tìm kiếm...?"
+            />
+            <button class="search__btn">
+              <i class="bx bx-search"></i>
+            </button>
+            <div class="header-search__wrap">
+              <div class="search-result">
+                <div class="search-result__text">
+                  <a href="#">Ako</a>
+                  <span>3,830,000</span>
+                </div>
+                <div class="search-result__img">
+                  <img src="img/ako_1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="search-result">
+                <div class="search-result__text">
+                  <a href="#">Ako</a>
+                  <span>3,830,000</span>
+                </div>
+                <div class="search-result__img">
+                  <img src="img/ako_1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-middle__action">
+            <div class="header__account" id="showLogin">
+              <div class="box-account">
+                <div class="account__icon">
+                  <img src="img/bx-user.svg" alt="" />
+                </div>
+                <div class="account__text">
+                  <div class="text-up">Đăng nhập / Đăng ký</div>
+                  <div class="text-down">
+                    Tài khoản của tôi
+                    <i class="bx bx-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="box-login">
+                <span class="box-triangle"></span>
+                <div class="box-login__heading">
+                  <h2 class="box-login__heading--title">Đăng nhập tài khoản</h2>
+                  <p class="box-login__heading--legend">
+                    Nhập email và mật khẩu của bạn:
+                  </p>
+                </div>
+                <div class="box-login__inner">
+                  <form action="">
+                    <div class="form-input">
+                      <input
+                        type="email"
+                        id="input-email"
+                        class="form-field"
+                        required
+                      />
+                      <label for="input-email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-input">
+                      <input
+                        type="password"
+                        id="input-password"
+                        class="form-field"
+                        required
+                      />
+                      <label for="input-password" class="form-label"
+                        >Mật khẩu</label
+                      >
+                      <div class="box__recaptcha">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="#">Privacy Policy</a> and
+                        <a href="#">Terms of Service</a> apply.
+                      </div>
+                    </div>
+                    <button type="submit" class="button form-submit">
+                      Đăng nhập
+                    </button>
+                  </form>
+                  <div class="box-login__action">
+                    <p>
+                      Khách hàng mới? <a href="#" class="link">Tạo tài khoản</a>
+                    </p>
+                    <p>
+                      Quên mật khẩu?
+                      <a href="#" class="link">Khôi phục mật khẩu</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__cart">
+              <div class="header__cart--text">
+                <div class="cart__icon">
+                  <img src="img/bx-cart.svg" alt="" />
+                  <span class="cart__number">0</span>
+                </div>
+                <div class="cart__text">Giỏ hàng</div>
+              </div>
+              <div class="cart-dropdown">
+                <span class="box-triangle"></span>
+                <div class="cart-dropdown__content">
+                  <p class="box-title">Giỏ hàng</p>
+                  <div class="cart-view clearfix">
+                    <div class="cart-view-scroll">
+                      <!-- <table style="display: none">
+                        <tbody>
+                          <tr class="mini-cart__item">
+                            <td class="mini-cart__left">
+                              <a href="#">
+                                <img
+                                  src="https://product.hstatic.net/1000160337/product/nendoroid_sk8_the_infinity_reki__5__0ce37453683a4779a37c4d92776e4c5a_small.jpg"
+                                  alt=""
+                                />
+                              </a>
+                            </td>
+                            <td class="mini-cart__right">
+                              <p class="mini-cart__title">
+                                <a href="#">
+                                  Nendoroid SK8 the Infinity Reki
+                                </a>
+                              </p>
+                              <div class="mini-cart__quantity">
+                                <span class="mnc-value">1</span>
+                              </div>
+                              <div class="mini-cart__price">
+                                <span class="mnc-price">2,000,000đ</span>
+                              </div>
+                              <div class="mini-cart__remove">
+                                <a href="">
+                                  <svg
+                                    width="80px"
+                                    height="80px"
+                                    viewBox="0 0 1024 1024"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      fill="#000000"
+                                      d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table> -->
+                      <table>
+                        <tbody id="mini-cart">
+                          <tr class="mini-cart__empty">
+                            <td>
+                              <div class="svgico-mini-cart">
+                                <svg
+                                  width="81"
+                                  height="70"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                >
+                                  <g id="icomoon-ignore"></g>
+                                  <path
+                                    d="M30.622 9.602h-22.407l-1.809-7.464h-5.027v1.066h4.188l5.198 21.443c-1.108 0.323-1.923 1.334-1.923 2.547 0 1.472 1.193 2.666 2.666 2.666s2.666-1.194 2.666-2.666c0-0.603-0.208-1.153-0.545-1.599h7.487c-0.337 0.446-0.545 0.997-0.545 1.599 0 1.472 1.193 2.666 2.665 2.666s2.666-1.194 2.666-2.666c0-1.473-1.193-2.665-2.666-2.666v0h-11.403l-0.517-2.133h14.968l4.337-12.795zM13.107 27.196c0 0.882-0.717 1.599-1.599 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599s1.599 0.718 1.599 1.599zM24.836 27.196c0 0.882-0.718 1.599-1.6 1.599s-1.599-0.717-1.599-1.599c0-0.882 0.717-1.599 1.599-1.599 0.882 0 1.6 0.718 1.6 1.599zM11.058 21.331l-2.585-10.662h20.662l-3.615 10.662h-14.462z"
+                                    fill="#000000"
+                                  ></path>
+                                </svg>
+                              </div>
+                              Hiện chưa có sản phẩm
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="cart-view-line"></div>
+                    <div class="cart-view-total">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="mnc-total text-left">TỔNG TIỀN:</td>
+                            <td
+                              class="mnc-total text-right"
+                              id="total-view-cart"
+                            >
+                              0đ
+                            </td>
+                          </tr>
+                          <tr class="mini-cart__button">
+                            <td>
+                              <a href="#" class="linktocart button"
+                                >Xem giỏ hàng</a
+                              >
+                            </td>
+                            <td>
+                              <a href="#" class="linktocheckout button btnred"
+                                >Thanh toán</a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-middle__input search-mobile">
+          <input
+            type="text"
+            placeholder="Nhập sản phẩm bạn muốn tìm kiếm...?"
+          />
+          <button class="search__btn">
+            <i class="bx bx-search"></i>
+          </button>
+          <div class="header-search__wrap">
+            <div class="search-result">
+              <div class="search-result__text">
+                <a href="#">Ako</a>
+                <span>3,830,000</span>
+              </div>
+              <div class="search-result__img">
+                <img src="img/ako_1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="search-result">
+              <div class="search-result__text">
+                <a href="#">Ako</a>
+                <span>3,830,000</span>
+              </div>
+              <div class="search-result__img">
+                <img src="img/ako_1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="header-nav" id="nav-fixed">
+          <div class="header-nav__logo">
+            <a href="#">
+              <img src="img/jewelry.png" alt="" />
+            </a>
+          </div>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Hướng dẫn</a></li>
+            <li class="has-submenu" id="has-submenu">
+              <a href="#"
+                >Sản phẩm<i class="bx bx-chevron-down" id="product-icon"></i
+              ></a>
+              <ul class="submenu">
+                <li><a href="#">Hàng có sẵn</a></li>
+                <li><a href="#">Hàng order</a></li>
+                <li><a href="#">Scale Figure</a></li>
+                <li><a href="#">Nendoroid</a></li>
+                <li><a href="#">Pop up Parade</a></li>
+                <li><a href="#">Figma</a></li>
+                <li><a href="#">R18</a></li>
+                <li><a href="#">Các loại figure khác</a></li>
+                <li><a href="#">Artbook</a></li>
+                <li><a href="#">Fidget Spinner</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Ưu đãi</a></li>
+            <li><a href="#">Kết nối</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="breadcrumb-shop">
+        <div class="container">
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Danh mục</a></li>
+            <li><a href="#">Tất cả sản phẩm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collection-banner">
+        <img src="img/collection-banner.jpg" alt="" />
+      </div>
+      <div class="wrapper-mainCollection">
+        <div class="collection-heading">
+          <div class="container">
+            <div class="row">
+              <h1 class="title">Tất cả sản phẩm</h1>
+              <div class="collection-softly">
+                <div class="collection-softly-filter">
+                  <span class="sort-icon">
+                    <i class="fa-solid fa-arrow-down-z-a"></i>
+                  </span>
+                  Sắp xếp
+                </div>
+                <div class="collection-softly-option">
+                  <ul class="sort-by">
+                    <li><span>Giá: Tăng dần</span></li>
+                    <li><span>Giá: Giảm dần</span></li>
+                    <li><span>Tên: A-Z</span></li>
+                    <li><span>Tên: Z-A</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-filter">
+          <div class="container">
+            <div class="wrapper_layered_filter">
+              <div class="layered_filter_container">
+                <div class="layered_filter_title">
+                  <p class="title_filter">
+                    <span class="icon-filter"
+                      ><i class="fa-solid fa-filter"></i
+                    ></span>
+                    Phân loại
+                  </p>
+                </div>
+                <div
+                  class="layered_filter_group layered_filter_mobileContent"
+                  id="layered_filter_mobile"
+                >
+                  <div class="row clearfix">
+                    <div class="filter_group">
+                      <div class="filter_group_block">
+                        <div class="filter_group-subtitle">
+                          <span>Thương hiệu</span>
+                          <span class="icon-control"
+                            ><i class="fa fa-chevron-down"></i
+                          ></span>
+                        </div>
+                        <div class="filter_group-content filter-brand">
+                          <ul class="checkbox-list">
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p1"
+                                value="Good Smile Company"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p1"
+                                >Good Smile Company</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p2"
+                                value="Kotobukiya"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p2">Kotobukiya</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p3"
+                                value="Max Factory"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p3">Max Factory</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p4"
+                                value="FREEing"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p4">FREEing</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p5"
+                                value="MegaHouse"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p5">MegaHouse</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p6"
+                                value="Bandai Spirits"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p6">Bandai Spirits</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p7"
+                                value="Phat Company"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p7">Phat Company</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p8"
+                                value="Alter"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p8">Alter</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p9"
+                                value="furyu"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p9">furyu</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p10"
+                                value="Union Creative"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p10">Union Creative</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p11"
+                                value="Kadokawa"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p11">Kadokawa</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p12"
+                                value="Good Smile Arts Shanghai"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p12"
+                                >Good Smile Arts Shanghai</label
+                              >
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p13"
+                                value="Square Enix"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p13">Square Enix</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p14"
+                                value="ques Q"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p14">ques Q</label>
+                            </li>
+
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p15"
+                                value="Orange Rouge"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p15">Orange Rouge</label>
+                            </li>
+                            <li>
+                              <input
+                                type="checkbox"
+                                id="data-brand-p16"
+                                value="Medicos Entertainment"
+                                name="brand-filter"
+                              />
+                              <label for="data-brand-p16"
+                                >Medicos Entertainment</label
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-listproduct">
+          <div class="container">
+            <div class="wraplist-collection">
+              <div class="row listProduct-row" id="collection-body">
+                <!-- <div class="row-item">
+                  <div class="item-img">
+                    <a class="nothover" href="#"
+                      ><img src="img/order-1.jpg" alt=""
+                    /></a>
+                    <a class="whenhover" href="#"
+                      ><img src="img/order-1-1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="item-detail">
+                    <h3>
+                      <a href="#" id="product-name"
+                        >Final Fantasy VII Remake Adorable Arts Aerith
+                        Gainsborough</a
+                      >
+                    </h3>
+                    <p class="item-detail__price" id="product-price">
+                      2,150,000đ
+                    </p>
+                  </div>
+                  <div class="item-action">
+                    <button
+                      class="item-action__btn"
+                      id="add-cart"
+                      data-id="${row.id}"
+                      onclick="addProduct(this)"
+                    >
+                      <i class="bx bx-cart-alt"></i>
+                    </button>
+                  </div>
+                </div> -->
+              </div>
+              <div class="pagination">
+                <div class="pagination-node" id="pagination">
+                  <a class="page-node current" href="#">1</a>
+                  <a class="page-node" href="#">2</a>
+                  <a class="page-node" href="#">3</a>
+                  <a class="page-node" href="#">4</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="section-footer-gallery">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="hTitle">Follow Japan Figure on Instagram</h2>
+          <p>@figureshop.vn</p>
+        </div>
+      </div>
+      <div class="row-gallery">
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-1.jpg" alt="" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-2.jpg" alt="" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-3.jpg" alt="" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-4.jpg" alt="" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-5.jpg" alt="" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="#"><img src="img/gallery-6.jpg" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="container">
+          <div class="row-footer">
+            <div class="widget-footer">
+              <h4 class="title-footer">Giới thiệu Japan Figure</h4>
+              <div class="content-footer txt-address">
+                <div class="content-footer__txt">
+                  <p>
+                    Giúp các bạn trẻ Việt Nam dễ dàng tiếp cận với mô hình
+                    figure Nhật Bản
+                  </p>
+                </div>
+                <div class="content-footer__address">
+                  <ul>
+                    <li class="contact-1">
+                      <b>Địa chỉ:</b>
+                      Quận 12, Tp. Hồ Chí Minh.<br />
+                      Figure Shop chưa có không gian trưng bày, bạn vui lòng hẹn
+                      trước khi đến
+                    </li>
+                    <li class="contact-2">
+                      <b>Điện thoại:</b>
+                      080 2482 0786
+                    </li>
+                    <li class="contact-3">
+                      <b>Email:</b>
+                      support@figureshop.vn
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="widget-footer">
+              <h4 class="title-footer">Hỗ trợ khách hàng</h4>
+              <div class="content-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#">Tìm kiếm</a>
+                  </li>
+                  <li class="item">
+                    <a href="#">Giới thiệu</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget-footer">
+              <h4 class="title-footer">Chăm sóc khách hàng</h4>
+              <div class="content-footer">
+                <div class="footer-hotline">
+                  <div class="box-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="box-content">
+                    <span>080 2482 0786</span>
+                    <u>support@figureshop.vn</u>
+                  </div>
+                </div>
+                <h4 class="fter-title">Follow Japan Figure</h4>
+                <ul class="footer-social">
+                  <li>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-google-plus"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            Copyright © 2023 <a href="#">Figure Shop</a>.
+            <a href="https://www.haravan.com/">Powered by Haravan</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="back-to-top disabled"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        />
+      </svg>
+    </div>
+    <script>
+      fetch("./json/products.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const html = data
+            .map((item) => {
+              return `<div class="row-item">
+                  <div class="item-img">
+                    <a class="nothover" href="#"
+                      ><img src="img/${item.img1}" alt=""
+                    /></a>
+                    <a class="whenhover" href="#"
+                      ><img src="img/${item.img2}" alt=""
+                    /></a>
+                  </div>
+                  <div class="item-detail">
+                    <h3>
+                      <a href="#" id="product-name"
+                        >${item.name}</a
+                      >
+                    </h3>
+                    <p class="item-detail__price" id="product-price">
+                      ${item.price}đ
+                    </p>
+                  </div>
+                  <div class="item-action">
+                    <button
+                      class="item-action__btn"
+                      id="add-cart"
+                      data-id="${item.id}"
+                      onclick="addProduct(this)"
+                    >
+                      <i class="bx bx-cart-alt"></i>
+                    </button>
+                  </div>
+                </div>`;
+            })
+            .join("");
+          document.getElementById("collection-body").innerHTML = html;
+        });
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

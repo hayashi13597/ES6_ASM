@@ -1,4 +1,27 @@
 .section-footer-gallery {
+  background-color: #f8f8f8;
+  .section-heading {
+    text-align: center;
+    padding: 40px 0;
+    .hTitle {
+      font-size: 28px;
+      margin: 0 0 10px;
+      font-weight: 700;
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s linear;
+        &:hover {
+          color: $shop-color-hover;
+          text-decoration: none;
+          outline: none;
+        }
+      }
+    }
+    .subTitle {
+      font-size: 14px;
+    }
+  }
   .row-gallery {
     display: flex;
     .gallery-item {
