@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tất cả sản phẩm</title>
+    <title>Chi tiết sản phẩm</title>
     <!-- link css -->
-    <link rel="stylesheet" href="css/products.css" />
-    <!-- link swiperjs -->
+    <link rel="stylesheet" href="css/detail.css" />
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- link boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <!-- link font awesome -->
     <link
@@ -19,11 +24,6 @@
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <!-- Link icon Boxicon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
     />
     <!-- Link font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -345,219 +345,282 @@
         <div class="container">
           <ul>
             <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Danh mục</a></li>
-            <li><a href="#">Tất cả sản phẩm</a></li>
+            <li><a href="#">Hàng order</a></li>
+            <li><a href="#">pre-order</a></li>
+            <li>
+              <a class="li-active" href="#"
+                >Final Fantasy VII Remake Adorable Arts Aerith Gainsborough</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-      <div class="collection-banner">
-        <img src="img/collection-banner.jpg" alt="" />
-      </div>
-      <div class="wrapper-mainCollection">
-        <div class="collection-heading">
-          <div class="container">
-            <div class="row">
-              <h1 class="title">Tất cả sản phẩm</h1>
-              <div class="collection-softly">
-                <div class="collection-softly-filter">
-                  <span class="sort-icon">
-                    <i class="fa-solid fa-arrow-down-z-a"></i>
-                  </span>
-                  Sắp xếp
+      <section class="productDetail-infomation">
+        <div class="container">
+          <div class="row">
+            <div class="productDetail--gallery">
+              <div
+                style="--swiper-navigation-color: #333"
+                class="swiper mySwiper2"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/order-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-6.jpg" />
+                  </div>
                 </div>
-                <div class="collection-softly-option">
-                  <ul class="sort-by">
-                    <li data-value="asc"><span>Giá: Tăng dần</span></li>
-                    <li data-value="desc"><span>Giá: Giảm dần</span></li>
-                    <li data-value="atoz"><span>Tên: A-Z</span></li>
-                    <li data-value="ztoa"><span>Tên: Z-A</span></li>
-                  </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div
+                thumbsSlider=""
+                class="swiper mySwiper"
+                style="--swiper-navigation-color: #333"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/order-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/order-1-6.jpg" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="collection-filter">
-          <div class="container">
-            <div class="wrapper_layered_filter">
-              <div class="layered_filter_container">
-                <div class="layered_filter_title">
-                  <p class="title_filter">
-                    <span class="icon-filter"
-                      ><i class="fa-solid fa-filter"></i
-                    ></span>
-                    Phân loại
-                  </p>
-                </div>
-                <div
-                  class="layered_filter_group layered_filter_mobileContent"
-                  id="layered_filter_mobile"
-                >
-                  <div class="row clearfix">
-                    <div class="filter_group">
-                      <div class="filter_group_block">
-                        <div class="filter_group-subtitle">
-                          <span>Thương hiệu</span>
-                          <span class="icon-control"
-                            ><i class="fa fa-chevron-down"></i
-                          ></span>
-                        </div>
-                        <div class="filter_group-content filter-brand">
-                          <ul class="checkbox-list">
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p1"
-                                value="Good Smile Company"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p1"
-                                >Good Smile Company</label
-                              >
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p2"
-                                value="Kotobukiya"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p2">Kotobukiya</label>
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p3"
-                                value="Max Factory"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p3">Max Factory</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p4"
-                                value="FREEing"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p4">FREEing</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p5"
-                                value="MegaHouse"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p5">MegaHouse</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p6"
-                                value="Bandai Spirits"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p6">Bandai Spirits</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p7"
-                                value="Phat Company"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p7">Phat Company</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p8"
-                                value="Alter"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p8">Alter</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p9"
-                                value="furyu"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p9">furyu</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p10"
-                                value="Union Creative"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p10">Union Creative</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p11"
-                                value="Kadokawa"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p11">Kadokawa</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p12"
-                                value="Good Smile Arts Shanghai"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p12"
-                                >Good Smile Arts Shanghai</label
-                              >
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p13"
-                                value="Square Enix"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p13">Square Enix</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p14"
-                                value="ques Q"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p14">ques Q</label>
-                            </li> -->
-
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p15"
-                                value="Orange Rouge"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p15">Orange Rouge</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p16"
-                                value="Medicos Entertainment"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p16"
-                                >Medicos Entertainment</label
-                              >
-                            </li> -->
-                          </ul>
+            <div class="productDetai--content" id="productDetai--content">
+              <div class="product-container-order">
+                <h1 class="productDetai__title">
+                  Final Fantasy VII Remake Adorable Arts Aerith Gainsborough
+                </h1>
+                <div class="productDetai__price">2,150,000đ</div>
+                <div class="product-form">
+                  <form action="">
+                    <div class="select-swatch">
+                      <div class="title-swap">Tiêu đề:</div>
+                      <div class="select-swap">
+                        <div class="swap-element">
+                          <label for="">
+                            <span>Đặt trước</span>
+                          </label>
                         </div>
                       </div>
+                    </div>
+                    <div class="select-action">
+                      <div class="quantity-area">
+                        <input
+                          type="button"
+                          value="-"
+                          onclick=""
+                          class="qty-btn"
+                        />
+                        <input
+                          type="text"
+                          id="quantity"
+                          name="quantity"
+                          value="1"
+                          min="1"
+                          class="quantity-input"
+                        />
+                        <input
+                          type="button"
+                          value="+"
+                          onclick=""
+                          class="qty-btn"
+                        />
+                      </div>
+                      <div class="addcart-area">
+                        <button
+                          type="button"
+                          id="add-to-cart"
+                          class="add-to-cartProduct button dark btn-addtocart btnred addtocart-modal"
+                          name="add"
+                        >
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="product-deliverly">
+                <ul class="infoList-deliverly">
+                  <li>
+                    <span>
+                      <img
+                        class="lazyloaded"
+                        data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_1_ico.png?v=298"
+                        src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_1_ico.png?v=298"
+                        alt="Sản phẩm chính hãng từ Nhật Bản.
+  Trước khi bạn đặt mua: vui lòng check lại giá hiện tại với admin, vì khả năng giá đã thay đổi so với lần cập nhật gần nhất, hoặc hết hàng, hết suất order. Do giới hạn số lượng, figure Nhật sẽ hiếm dần theo thời gian, dẫn tới giá tăng."
+                      />
+                    </span>
+                    <i class="fa fa-check"></i>
+                    <strong>Sản phẩm chính hãng từ Nhật Bản.</strong><br />
+                    <i class="fa fa-check"></i>
+                    <strong>Trước khi bạn đặt mua:</strong> vui lòng check lại
+                    giá hiện tại với admin, vì khả năng giá đã thay đổi so với
+                    lần cập nhật gần nhất, hoặc hết hàng, hết suất order. Do
+                    giới hạn số lượng, figure Nhật sẽ hiếm dần theo thời gian,
+                    dẫn tới giá tăng.
+                  </li>
+                  <li>
+                    <span>
+                      <img
+                        class="lazyloaded"
+                        data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_2_ico.png?v=298"
+                        src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_2_ico.png?v=298"
+                        alt="Với sản phẩm CÓ SẴN, bạn sẽ được giao ngay.
+  Với sản phẩm ĐẶT TRƯỚC, bạn cần cọc 50% giá trị sản phẩm. Hàng về VN khoảng 2-3 tuần sau khi phát hành. Lịch phát hành dự kiến như thông tin chi tiết bên dưới."
+                      />
+                    </span>
+                    <i class="fa fa-check"></i> Với sản phẩm
+                    <strong>CÓ SẴN, bạn sẽ được giao ngay.</strong><br />
+                    <i class="fa fa-check"></i> Với sản phẩm
+                    <strong
+                      >ĐẶT TRƯỚC, bạn cần cọc 50% giá trị sản phẩm.</strong
+                    >
+                    Hàng về VN khoảng 2-3 tuần sau khi phát hành. Lịch phát hành
+                    dự kiến như thông tin chi tiết bên dưới.<br />
+                  </li>
+                  <li>
+                    <span>
+                      <img
+                        class="ls-is-cached lazyloaded"
+                        data-src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=298"
+                        src="//theme.hstatic.net/1000160337/1000885200/14/product_deliverly_3_ico.png?v=298"
+                        alt="Giao hàng tận nơi
+  Miễn phí ship với các đơn hàng >1000K 
+  Vui lòng kiểm tra sản phẩm khi nhận bưu kiện"
+                      />
+                    </span>
+                    <i class="fa fa-check"></i> Giao hàng tận nơi<br />
+                    <i class="fa fa-check"></i> Miễn phí ship với các đơn hàng
+                    &gt;1000K <br />
+                    <i class="fa fa-check"></i> Vui lòng kiểm tra sản phẩm khi
+                    nhận bưu kiện
+                  </li>
+                </ul>
+              </div>
+              <div class="product-description">
+                <div class="panel-group">
+                  <div class="panel-title"><h2>THông tin sản phẩm</h2></div>
+                  <div class="panel-description" style="display: block">
+                    <div class="description-productdetail">
+                      <p class="item-detailsection-title">
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><strong
+                              ><span style="font-size: 11pt"
+                                ><span style="color: #339966"
+                                  >Giá&nbsp;cập nhật tháng 2/2023:
+                                  2.150.000đ</span
+                                ></span
+                              ></strong
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Final Fantasy VII Remake Adorable Arts Aerith
+                                Gainsborough</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 14.5px">Nhân vật:&nbsp;</span
+                        ><span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Aerith Gainsborough</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Series:&nbsp;Final Fantasy VII</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Hãng sản xuất: Square Enix</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Kích thước: 11.4cm&nbsp;</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                      <p>
+                        <span style="font-size: 12pt"
+                          ><span style="background-color: white"
+                            ><span style="font-size: 11pt"
+                              ><span style="color: #333333"
+                                >Phát hành: 8/2023</span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -565,65 +628,57 @@
             </div>
           </div>
         </div>
-        <div class="collection-checked-filter">
-          <div class="container">
-            <div class="checked-filter" id="checked-filter">
-              <p class="checked-filter-option" style="display: none">
-                Thương hiệu:
-                <span class="option-bold" id="listOption"></span>
-                <i class="fa-solid fa-xmark" id="removeOption"></i>
-              </p>
-            </div>
+      </section>
+      <section class="productDetail-related">
+        <div class="container">
+          <div class="productRelated-title">
+            <h2>Sản phẩm liên quan</h2>
           </div>
-        </div>
-        <div class="collection-listproduct">
-          <div class="container">
-            <div class="wraplist-collection">
-              <div class="row listProduct-row" id="collection-body">
-                <!-- <div class="row-item">
-                  <div class="item-img">
-                    <a class="nothover" href="#"
-                      ><img src="img/order-1.jpg" alt=""
-                    /></a>
-                    <a class="whenhover" href="#"
-                      ><img src="img/order-1-1.jpg" alt=""
-                    /></a>
-                  </div>
-                  <div class="item-detail">
-                    <h3>
-                      <a href="#" id="product-name"
-                        >Final Fantasy VII Remake Adorable Arts Aerith
-                        Gainsborough</a
-                      >
-                    </h3>
-                    <p class="item-detail__price" id="product-price">
-                      2,150,000đ
-                    </p>
-                  </div>
-                  <div class="item-action">
-                    <button
-                      class="item-action__btn"
-                      id="add-cart"
-                      data-id="${row.id}"
-                      onclick="addProduct(this)"
-                    >
-                      <i class="bx bx-cart-alt"></i>
-                    </button>
-                  </div>
-                </div> -->
-              </div>
-              <div class="pagination">
-                <div class="pagination-node" id="pagination">
-                  <!-- <a class="page-node current" href="#">1</a>
-                  <a class="page-node" href="#">2</a>
-                  <a class="page-node" href="#">3</a>
-                  <a class="page-node" href="#">4</a> -->
+          <div class="productRelated-content">
+            <div class="productRelated-content__wrapper">
+              <div class="swiper mySwiper3">
+                <div class="swiper-wrapper" id="product-detail">
+                  <!-- <div class="swiper-slide">
+                    <div class="row-item">
+                      <div class="item-img">
+                        <a class="nothover" href="#"
+                          ><img src="img/order-1.jpg" alt=""
+                        /></a>
+                        <a class="whenhover" href="#"
+                          ><img src="img/order-1-1.jpg" alt=""
+                        /></a>
+                      </div>
+                      <div class="item-detail">
+                        <h3>
+                          <a href="#" id="product-name"
+                            >Final Fantasy VII Remake Adorable Arts Aerith
+                            Gainsborough</a
+                          >
+                        </h3>
+                        <p class="item-detail__price" id="product-price">
+                          2,150,000đ
+                        </p>
+                      </div>
+                      <div class="item-action">
+                        <button
+                          class="item-action__btn"
+                          id="add-cart"
+                          data-id="${row.id}"
+                          onclick="addProduct(this)"
+                        >
+                          <i class="bx bx-cart-alt"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div> -->
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <section class="section-footer-gallery">
       <div class="container">
@@ -762,7 +817,8 @@
         />
       </svg>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/products.js"></script>
+    <script src="js/detail.js"></script>
   </body>
 </html>
