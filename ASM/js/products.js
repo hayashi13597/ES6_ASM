@@ -76,16 +76,16 @@ const showProducts = (arr = []) => {
     .map((item) => {
       return `<div class="row-item">
                   <div class="item-img">
-                    <a class="nothover" href="#"
+                    <a class="nothover" href="product-detail.html"
                       ><img src="img/${item.img1}" alt=""
                     /></a>
-                    <a class="whenhover" href="#"
+                    <a class="whenhover" href="product-detail.html"
                       ><img src="img/${item.img2}" alt=""
                     /></a>
                   </div>
                   <div class="item-detail">
                     <h3>
-                      <a href="#" id="product-name"
+                      <a href="product-detail.html" id="product-name"
                         >${item.name}</a
                       >
                     </h3>
@@ -173,16 +173,16 @@ const showAllProduct = async () => {
       item.classList.add("row-item");
       item.innerHTML = `
       <div class="item-img">
-        <a class="nothover" href="#"
+        <a class="nothover" href="product-detail.html"
           ><img src="img/${items[i].img1}" alt=""
         /></a>
-        <a class="whenhover" href="#"
+        <a class="whenhover" href="product-detail.html"
           ><img src="img/${items[i].img2}" alt=""
         /></a>
       </div>
       <div class="item-detail">
         <h3>
-          <a href="#" id="product-name"
+          <a href="product-detail.html" id="product-name"
             >${items[i].name}</a
           >
         </h3>

@@ -4,23 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tất cả sản phẩm</title>
-    <!-- link css -->
-    <link rel="stylesheet" href="css/products.css" />
-    <!-- link swiperjs -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- link font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Link icon Boxicon -->
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- link boxicon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -63,7 +49,7 @@
               </ul>
             </div>
           </div>
-          <a class="header-middle__logo" href="#"
+          <a class="header-middle__logo" href="index.html"
             ><img src="img/jewelry.png" alt=""
           /></a>
           <div class="header-middle__input">
@@ -345,285 +331,119 @@
         <div class="container">
           <ul>
             <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Danh mục</a></li>
-            <li><a href="#">Tất cả sản phẩm</a></li>
+            <li><a href="#" class="li-active">Giỏ hàng</a></li>
           </ul>
         </div>
       </div>
-      <div class="collection-banner">
-        <img src="img/collection-banner.jpg" alt="" />
-      </div>
-      <div class="wrapper-mainCollection">
-        <div class="collection-heading">
+      <section class="wrapper-mainCart">
+        <div class="heading-titleCart">
           <div class="container">
-            <div class="row">
-              <h1 class="title">Tất cả sản phẩm</h1>
-              <div class="collection-softly">
-                <div class="collection-softly-filter">
-                  <span class="sort-icon">
-                    <i class="fa-solid fa-arrow-down-z-a"></i>
-                  </span>
-                  Sắp xếp
-                </div>
-                <div class="collection-softly-option">
-                  <ul class="sort-by">
-                    <li data-value="asc"><span>Giá: Tăng dần</span></li>
-                    <li data-value="desc"><span>Giá: Giảm dần</span></li>
-                    <li data-value="atoz"><span>Tên: A-Z</span></li>
-                    <li data-value="ztoa"><span>Tên: Z-A</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <h1 class="heading-cart">Giỏ hàng của bạn</h1>
           </div>
         </div>
-        <div class="collection-filter">
+        <div class="content-bodyCart">
           <div class="container">
-            <div class="wrapper_layered_filter">
-              <div class="layered_filter_container">
-                <div class="layered_filter_title">
-                  <p class="title_filter">
-                    <span class="icon-filter"
-                      ><i class="fa-solid fa-filter"></i
-                    ></span>
-                    Phân loại
-                  </p>
-                </div>
-                <div
-                  class="layered_filter_group layered_filter_mobileContent"
-                  id="layered_filter_mobile"
-                >
-                  <div class="row clearfix">
-                    <div class="filter_group">
-                      <div class="filter_group_block">
-                        <div class="filter_group-subtitle">
-                          <span>Thương hiệu</span>
-                          <span class="icon-control"
-                            ><i class="fa fa-chevron-down"></i
-                          ></span>
+            <div class="row">
+              <div class="contentCart-detail">
+                <div class="list-pageform-cart">
+                  <div class="cart-row">
+                    <p class="title-number-cart">
+                      Bạn đang có <strong class="count-cart">1</strong> trong
+                      giỏ hàng
+                    </p>
+                    <div class="table-cart">
+                      <!-- <div class="media-line-item">
+                        <div class="media-left">
+                          <div class="item-imm">
+                            <a href="#">
+                              <img src="img/order-1.jpg" alt="" />
+                            </a>
+                          </div>
                         </div>
-                        <div class="filter_group-content filter-brand">
-                          <ul class="checkbox-list">
-                            <li>
+                        <div class="media-right">
+                          <div class="item-info">
+                            <a href="#">
+                              <h3 class="item--title">
+                                Spice and Wolf Holo Exclusive Extra Color
+                                Edition 1/7
+                              </h3>
+                            </a>
+                          </div>
+                          <div class="item-qty">
+                            <div class="quantity-partent clearfix">
+                              <button type="button" class="qtyminus qty-btn">
+                                -
+                              </button>
                               <input
-                                type="checkbox"
-                                id="data-brand-p1"
-                                value="Good Smile Company"
-                                name="brand-filter"
+                                type="text"
+                                min="1"
+                                value="1"
+                                class="item-quantity"
                               />
-                              <label for="data-brand-p1"
-                                >Good Smile Company</label
-                              >
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p2"
-                                value="Kotobukiya"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p2">Kotobukiya</label>
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p3"
-                                value="Max Factory"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p3">Max Factory</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p4"
-                                value="FREEing"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p4">FREEing</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p5"
-                                value="MegaHouse"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p5">MegaHouse</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p6"
-                                value="Bandai Spirits"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p6">Bandai Spirits</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p7"
-                                value="Phat Company"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p7">Phat Company</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p8"
-                                value="Alter"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p8">Alter</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p9"
-                                value="furyu"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p9">furyu</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p10"
-                                value="Union Creative"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p10">Union Creative</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p11"
-                                value="Kadokawa"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p11">Kadokawa</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p12"
-                                value="Good Smile Arts Shanghai"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p12"
-                                >Good Smile Arts Shanghai</label
-                              >
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p13"
-                                value="Square Enix"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p13">Square Enix</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p14"
-                                value="ques Q"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p14">ques Q</label>
-                            </li> -->
-
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p15"
-                                value="Orange Rouge"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p15">Orange Rouge</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p16"
-                                value="Medicos Entertainment"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p16"
-                                >Medicos Entertainment</label
-                              >
-                            </li> -->
-                          </ul>
+                              <button type="button" class="qtyplus qty-btn">
+                                +
+                              </button>
+                            </div>
+                          </div>
+                          <div class="item-price">
+                            <p>
+                              <span>5,950,000đ</span>
+                            </p>
+                          </div>
                         </div>
+                        <div class="item-total-price">
+                          <div class="price">
+                            <span class="text"> Thành tiền </span>
+                            <span class="line-item-total"> 5,950,000 </span>
+                          </div>
+                          <div class="remove">
+                            <a href="javascript:(0)">
+                              <img src="img/trash-regular-24.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="cart-row">
+                    <div class="order-noted-block">
+                      <div class="checkout-buttons">
+                        <label for="note" class="note-label">
+                          Ghi chú đơn hàng
+                        </label>
+                        <textarea
+                          class="form-control"
+                          name="note"
+                          id="note"
+                          rows="5"
+                        ></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-checked-filter">
-          <div class="container">
-            <div class="checked-filter" id="checked-filter">
-              <p class="checked-filter-option" style="display: none">
-                Thương hiệu:
-                <span class="option-bold" id="listOption"></span>
-                <i class="fa-solid fa-xmark" id="removeOption"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="collection-listproduct">
-          <div class="container">
-            <div class="wraplist-collection">
-              <div class="row listProduct-row" id="collection-body">
-                <!-- <div class="row-item">
-                  <div class="item-img">
-                    <a class="nothover" href="#"
-                      ><img src="img/order-1.jpg" alt=""
-                    /></a>
-                    <a class="whenhover" href="#"
-                      ><img src="img/order-1-1.jpg" alt=""
-                    /></a>
-                  </div>
-                  <div class="item-detail">
-                    <h3>
-                      <a href="#" id="product-name"
-                        >Final Fantasy VII Remake Adorable Arts Aerith
-                        Gainsborough</a
-                      >
-                    </h3>
-                    <p class="item-detail__price" id="product-price">
-                      2,150,000đ
+              <div class="sidebarCart-sticky">
+                <div class="wrap-order-summary">
+                  <h2 class="summary-title">Thông tin đơn hàng</h2>
+                  <div class="summary-total">
+                    <p>
+                      Tổng tiền
+                      <span>5,950,000</span>
                     </p>
                   </div>
-                  <div class="item-action">
-                    <button
-                      class="item-action__btn"
-                      id="add-cart"
-                      data-id="${row.id}"
-                      onclick="addProduct(this)"
-                    >
-                      <i class="bx bx-cart-alt"></i>
-                    </button>
+                  <div class="summary-action">
+                    <p>Phí vận chuyển sẽ được tính ở trang thanh toán.</p>
+                    <p>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>
+                    <a href="javascript:(0)" class="checkout-btn btnred">
+                      THANH TOÁN
+                    </a>
                   </div>
-                </div> -->
-              </div>
-              <div class="pagination">
-                <div class="pagination-node" id="pagination">
-                  <!-- <a class="page-node current" href="#">1</a>
-                  <a class="page-node" href="#">2</a>
-                  <a class="page-node" href="#">3</a>
-                  <a class="page-node" href="#">4</a> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <section class="section-footer-gallery">
       <div class="container">
@@ -763,6 +583,6 @@
       </svg>
     </div>
     <script src="js/index.js"></script>
-    <script src="js/products.js"></script>
+    <script type="module" src="js/cart.js"></script>
   </body>
 </html>

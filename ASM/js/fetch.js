@@ -12,16 +12,16 @@ const fetchOrders = async () => {
       .map((row) => {
         return `<div class="row-item">
         <div class="item-img">
-          <a class="nothover" href="#"
-            ><img src="img/${row.img1}" alt=""
+          <a class="nothover" href="product-detail.html"
+            ><img src="img/${row.img1}" alt="${row.name}"
           /></a>
-          <a class="whenhover" href="#"
-            ><img src="img/${row.img2}" alt=""
+          <a class="whenhover" href="product-detail.html"
+            ><img src="img/${row.img2}" alt="${row.name}"
           /></a>
         </div>
         <div class="item-detail">
           <h3>
-            <a href="#" id="product-name"
+            <a href="product-detail.html" id="product-name"
               >${row.name}</a
             >
           </h3>
@@ -52,16 +52,16 @@ const fetchProductAvailable = async () => {
       .map((row) => {
         return `<div class="row-item">
         <div class="item-img">
-          <a class="nothover" href="#"
-            ><img src="img/${row.img1}" alt=""
+          <a class="nothover" href="product-detail.html"
+            ><img src="img/${row.img1}" alt="${row.name}"
           /></a>
-          <a class="whenhover" href="#"
+          <a class="whenhover" href="product-detail.html"
             ><img src="img/${row.img2}" alt=""
           /></a>
         </div>
         <div class="item-detail">
           <h3>
-            <a href="#" id="product-name"
+            <a href="product-detail.html" id="product-name"
               >${row.name}</a
             >
           </h3>
@@ -92,16 +92,16 @@ const fetchScaleFigures = async () => {
       .map((col) => {
         return `<div class="col-item">
         <div class="col-item__img">
-          <a class="nothover" href="#"
+          <a class="nothover" href="product-detail.html"
             ><img src="img/${col.img1}" alt=""
           /></a>
-          <a class="whenhover" href="#"
+          <a class="whenhover" href="product-detail.html"
             ><img src="img/${col.img2}" alt=""
           /></a>
         </div>
         <div class="col-item__detail">
           <h3>
-            <a href="#"
+            <a href="product-detail.html"
               >${col.name}</a
             >
           </h3>
@@ -122,4 +122,3 @@ const getAllProduct = async () => {
 fetchOrders();
 fetchProductAvailable();
 fetchScaleFigures();
-

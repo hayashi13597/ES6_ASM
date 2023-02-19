@@ -1,3 +1,10 @@
+const showLogin = document.querySelector(".header__account");
+const boxAccount = document.querySelector(".box-account");
+const showCart = document.querySelector(".header__cart");
+const boxCart = document.querySelector(".header__cart--text");
+const products = document.querySelector("#has-submenu");
+const pro_icon = document.querySelector("#product-icon");
+
 //responsive with header menu
 function check() {
   let menu = document.getElementById("header-menu").checked;
@@ -9,21 +16,15 @@ function check() {
   }
 }
 // submenu show and hide
-const products = document.querySelector("#has-submenu");
-const pro_icon = document.querySelector("#product-icon");
-products.addEventListener("mouseover", (event) => {
+products.addEventListener("mouseover", () => {
   pro_icon.classList.add("rotate-add");
   pro_icon.classList.remove("rotate-remove");
 });
-products.addEventListener("mouseout", (event) => {
+products.addEventListener("mouseout", () => {
   pro_icon.classList.add("rotate-remove");
   pro_icon.classList.remove("rotate-add");
 });
 //show and hide login and cart
-const showLogin = document.querySelector(".header__account");
-const boxAccount = document.querySelector(".box-account");
-const showCart = document.querySelector(".header__cart");
-const boxCart = document.querySelector(".header__cart--text");
 boxAccount.addEventListener("click", () => {
   showLogin.classList.toggle("js-action-show");
   showCart.classList.remove("js-action-show");
