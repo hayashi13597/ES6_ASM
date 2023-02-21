@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tất cả sản phẩm</title>
+    <title>Đăng ký</title>
     <!-- link css -->
-    <link rel="stylesheet" href="css/products.css" />
-    <!-- link swiperjs -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="css/register.css" />
     <!-- link font awesome -->
     <link
       rel="stylesheet"
@@ -63,7 +58,7 @@
               </ul>
             </div>
           </div>
-          <a class="header-middle__logo" href="#"
+          <a class="header-middle__logo" href="index.html"
             ><img src="img/jewelry.png" alt=""
           /></a>
           <div class="header-middle__input">
@@ -150,7 +145,7 @@
                   </form>
                   <div class="box-login__action">
                     <p>
-                      Khách hàng mới? <a href="register.html" class="link">Tạo tài khoản</a>
+                      Khách hàng mới? <a href="#" class="link">Tạo tài khoản</a>
                     </p>
                     <p>
                       Quên mật khẩu?
@@ -218,7 +213,7 @@
                       </table> -->
                       <table>
                         <tbody id="mini-cart">
-                          <tr class="mini-cart__empty">
+                          <!-- <tr class="mini-cart__empty">
                             <td>
                               <div class="svgico-mini-cart">
                                 <svg
@@ -238,7 +233,7 @@
                               </div>
                               Hiện chưa có sản phẩm
                             </td>
-                          </tr>
+                          </tr> -->
                         </tbody>
                       </table>
                     </div>
@@ -262,7 +257,9 @@
                               >
                             </td>
                             <td>
-                              <a href="payment.html" class="linktocheckout button btnred"
+                              <a
+                                href="payment.html"
+                                class="linktocheckout button btnred"
                                 >Thanh toán</a
                               >
                             </td>
@@ -340,285 +337,142 @@
         </nav>
       </div>
     </header>
-    <main class="main">
-      <div class="breadcrumb-shop">
+    <main class="wrapperMain_content">
+      <div class="layout-account">
         <div class="container">
-          <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="products.html">Tất cả sản phẩm</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="collection-banner">
-        <img src="img/collection-banner.jpg" alt="" />
-      </div>
-      <div class="wrapper-mainCollection">
-        <div class="collection-heading">
-          <div class="container">
-            <div class="row">
-              <h1 class="title">Tất cả sản phẩm</h1>
-              <div class="collection-softly">
-                <div class="collection-softly-filter">
-                  <span class="sort-icon">
-                    <i class="fa-solid fa-arrow-down-z-a"></i>
-                  </span>
-                  Sắp xếp
-                </div>
-                <div class="collection-softly-option">
-                  <ul class="sort-by">
-                    <li data-value="asc"><span>Giá: Tăng dần</span></li>
-                    <li data-value="desc"><span>Giá: Giảm dần</span></li>
-                    <li data-value="atoz"><span>Tên: A-Z</span></li>
-                    <li data-value="ztoa"><span>Tên: Z-A</span></li>
-                  </ul>
-                </div>
-              </div>
+          <div class="wrapbox-heading-account">
+            <div class="header-page clearfix">
+              <h1>Tạo tài khoản</h1>
             </div>
           </div>
-        </div>
-        <div class="collection-filter">
-          <div class="container">
-            <div class="wrapper_layered_filter">
-              <div class="layered_filter_container">
-                <div class="layered_filter_title">
-                  <p class="title_filter">
-                    <span class="icon-filter"
-                      ><i class="fa-solid fa-filter"></i
-                    ></span>
-                    Phân loại
-                  </p>
+          <div id="wrap-social-login-plus"></div>
+          <div class="wrapbox-content-account">
+            <div class="userbox customers_accountForm">
+              <form id="create_customer">
+                <div id="field-lastname" class="clearfix large_form">
+                  <label for="last_name" class="label icon-field"
+                    ><i class="icon-login icon-user"></i
+                  ></label>
+                  <input
+                    required
+                    type="text"
+                    value=""
+                    name="customer[last_name]"
+                    placeholder="Họ"
+                    id="last_name"
+                    class="text"
+                    size="30"
+                    autocomplete="off"
+                  />
+                </div>
+                <div id="field-firstname" class="clearfix large_form">
+                  <label for="first_name" class="label icon-field"
+                    ><i class="icon-login icon-user"></i
+                  ></label>
+                  <input
+                    required
+                    type="text"
+                    value=""
+                    name="customer[first_name]"
+                    placeholder="Tên"
+                    id="first_name"
+                    class="text"
+                    size="30"
+                    autocomplete="off"
+                  />
+                </div>
+                <!-- <div id="field-gender" class="clearfix large_form">
+                  <input
+                    id="radio1"
+                    type="radio"
+                    value="0"
+                    name="customer[gender]"
+                  />
+                  <label for="radio1">Nữ</label>
+                  <input
+                    id="radio2"
+                    type="radio"
+                    value="1"
+                    name="customer[gender]"
+                  />
+                  <label for="radio2">Nam</label>
+                </div> -->
+                <!-- <div id="field-birthday" class="clearfix large_form">
+                  <label for="birthday" class="label icon-field"
+                    ><i class="icon-login icon-envelope"></i
+                  ></label>
+                  <input
+                    type="text"
+                    value=""
+                    placeholder="mm/dd/yyyy"
+                    name="customer[birthday]"
+                    id="birthday"
+                    class="text"
+                    size="30"
+                  />
+                </div> -->
+                <div id="field-email" class="clearfix large_form">
+                  <label for="email" class="label icon-field"
+                    ><i class="icon-login icon-envelope"></i
+                  ></label>
+                  <input
+                    required
+                    type="email"
+                    value=""
+                    placeholder="Email"
+                    name="customer[email]"
+                    id="email"
+                    class="text"
+                    size="30"
+                    autocomplete="off"
+                  />
                 </div>
                 <div
-                  class="layered_filter_group layered_filter_mobileContent"
-                  id="layered_filter_mobile"
+                  id="field-password"
+                  class="clearfix large_form large_form-mrb"
                 >
-                  <div class="row clearfix">
-                    <div class="filter_group">
-                      <div class="filter_group_block">
-                        <div class="filter_group-subtitle">
-                          <span>Thương hiệu</span>
-                          <span class="icon-control"
-                            ><i class="fa fa-chevron-down"></i
-                          ></span>
-                        </div>
-                        <div class="filter_group-content filter-brand">
-                          <ul class="checkbox-list">
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p1"
-                                value="Good Smile Company"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p1"
-                                >Good Smile Company</label
-                              >
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p2"
-                                value="Kotobukiya"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p2">Kotobukiya</label>
-                            </li>
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p3"
-                                value="Max Factory"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p3">Max Factory</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p4"
-                                value="FREEing"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p4">FREEing</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p5"
-                                value="MegaHouse"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p5">MegaHouse</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p6"
-                                value="Bandai Spirits"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p6">Bandai Spirits</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p7"
-                                value="Phat Company"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p7">Phat Company</label>
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p8"
-                                value="Alter"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p8">Alter</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p9"
-                                value="furyu"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p9">furyu</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p10"
-                                value="Union Creative"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p10">Union Creative</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p11"
-                                value="Kadokawa"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p11">Kadokawa</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p12"
-                                value="Good Smile Arts Shanghai"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p12"
-                                >Good Smile Arts Shanghai</label
-                              >
-                            </li> -->
-                            <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p13"
-                                value="Square Enix"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p13">Square Enix</label>
-                            </li>
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p14"
-                                value="ques Q"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p14">ques Q</label>
-                            </li> -->
-
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p15"
-                                value="Orange Rouge"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p15">Orange Rouge</label>
-                            </li> -->
-                            <!-- <li>
-                              <input
-                                type="checkbox"
-                                id="data-brand-p16"
-                                value="Medicos Entertainment"
-                                name="brand-filter"
-                              />
-                              <label for="data-brand-p16"
-                                >Medicos Entertainment</label
-                              >
-                            </li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <label for="password" class="label icon-field"
+                    ><i class="icon-login icon-shield"></i
+                  ></label>
+                  <input
+                    required
+                    type="password"
+                    value=""
+                    placeholder="Mật khẩu"
+                    name="customer[password]"
+                    id="password"
+                    class="password text"
+                    size="30"
+                  />
+                </div>
+                <div class="clearfix large_form sitebox-recaptcha">
+                  This site is protected by reCAPTCHA and the Google
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a
+                    href="https://policies.google.com/terms"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Terms of Service</a
+                  >
+                  apply.
+                </div>
+                <div class="clearfix custommer_account_action">
+                  <div class="action_bottom button dark">
+                    <input class="btn" type="submit" value="Đăng ký" />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="collection-checked-filter">
-          <div class="container">
-            <div class="checked-filter" id="checked-filter">
-              <p class="checked-filter-option" style="display: none">
-                Thương hiệu:
-                <span class="option-bold" id="listOption"></span>
-                <i class="fa-solid fa-xmark" id="removeOption"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="collection-listproduct">
-          <div class="container">
-            <div class="wraplist-collection">
-              <div class="row listProduct-row" id="collection-body">
-                <!-- <div class="row-item">
-                  <div class="item-img">
-                    <a class="nothover" href="#"
-                      ><img src="img/order-1.jpg" alt=""
-                    /></a>
-                    <a class="whenhover" href="#"
-                      ><img src="img/order-1-1.jpg" alt=""
-                    /></a>
-                  </div>
-                  <div class="item-detail">
-                    <h3>
-                      <a href="#" id="product-name"
-                        >Final Fantasy VII Remake Adorable Arts Aerith
-                        Gainsborough</a
-                      >
-                    </h3>
-                    <p class="item-detail__price" id="product-price">
-                      2,150,000đ
-                    </p>
-                  </div>
-                  <div class="item-action">
-                    <button
-                      class="item-action__btn"
-                      id="add-cart"
-                      data-id="${row.id}"
-                      onclick="addProduct(this)"
-                    >
-                      <i class="bx bx-cart-alt"></i>
-                    </button>
-                  </div>
-                </div> -->
-              </div>
-              <div class="pagination">
-                <div class="pagination-node" id="pagination">
-                  <!-- <a class="page-node current" href="#">1</a>
-                  <a class="page-node" href="#">2</a>
-                  <a class="page-node" href="#">3</a>
-                  <a class="page-node" href="#">4</a> -->
+                <div class="clearfix req_pass">
+                  <a class="come-back" href="index.html"
+                    ><i class="fa fa-long-arrow-left"></i> Quay lại trang chủ</a
+                  >
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -762,6 +616,5 @@
       </svg>
     </div>
     <script src="js/index.js"></script>
-    <script src="js/products.js"></script>
   </body>
 </html>

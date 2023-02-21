@@ -76,3 +76,18 @@ const scrollWithDiv = () => {
 window.onscroll = function () {
   scrollWithDiv();
 };
+const address = fetch("./json/products.json")
+  .then((res) => res.json())
+  .then((data) => data);
+const showDetail = async () => {
+  const id = window.location.search.slice(4) || 1;
+  const data = await address;
+  const item = data.find((item) => item.id == id);
+  document.querySelector(".productDetai__title").innerText = item.name;
+  document.querySelector(".productDetai__price").innerText = item.price + "đ";
+  document.querySelector("#nameProduct").innerText = item.name;
+  document.querySelector("#category").innerText = item.category;
+  document.querySelector("#img1").setAttribute("src", "img/" + item.img1);
+  document.querySelector("#img11").setAttribute("src", "img/" + item.img2);
+};
+showDetail();

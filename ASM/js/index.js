@@ -165,7 +165,7 @@ const addProduct = (e) => {
   let targetGrand = e.parentNode;
   let detail = targetGrand.previousElementSibling;
   let imgDiv = detail.previousElementSibling;
-  let img = imgDiv.children[0].firstChild.getAttribute("src");
+  let img = imgDiv.children[0].firstElementChild.getAttribute("src");
   let count = 1;
   let id = e.getAttribute("data-id");
   let name = detail.children[0].innerText;
