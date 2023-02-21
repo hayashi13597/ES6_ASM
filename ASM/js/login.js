@@ -67,3 +67,4 @@ const storeOwner = new StoreOwner("admin@gmail.com", "123456", "Figure Shop");
 storeOwner.manageStore();
 
 const customer = new Customer("guest@gmail.com", "123456");
+customer.viewCart();
