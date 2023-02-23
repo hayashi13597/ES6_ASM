@@ -55,13 +55,19 @@
           <div class="header-middle__input">
             <input
               type="text"
+              oninput="search()"
+              id="search"
               placeholder="Nhập sản phẩm bạn muốn tìm kiếm...?"
             />
             <button class="search__btn">
               <i class="bx bx-search"></i>
             </button>
-            <div class="header-search__wrap">
-              <div class="search-result">
+            <div
+              class="header-search__wrap"
+              style="max-height: 310px; overflow: auto"
+              id="search-result"
+            >
+              <!-- <div class="search-result">
                 <div class="search-result__text">
                   <a href="#">Ako</a>
                   <span>3,830,000</span>
@@ -78,7 +84,7 @@
                 <div class="search-result__img">
                   <img src="img/ako_1.jpg" alt="" />
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="header-middle__action">

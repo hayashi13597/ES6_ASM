@@ -3,7 +3,6 @@ import { productInCart, removeItem } from "./exportCart.js";
 export const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
-
 // const productInCart = () => {
 //   const cart = JSON.parse(sessionStorage.getItem("cart"));
 //   if (cart) {
@@ -182,3 +181,12 @@ export const displayTitle = () => {
   }
 };
 displayTitle();
+
+const changeLink = () => {
+  const link = document.querySelector(".checkout-btn.btnred");
+  console.log(link);
+  const data = JSON.parse(sessionStorage.getItem("cart"));
+  if (data?.length > 0) return;
+  link.href = "javascript:(0)";
+};
+changeLink();

@@ -195,3 +195,25 @@ const addProduct = (e) => {
   }, 1000);
   showAllCart();
 };
+
+const search = async () => {
+  document.getElementById("search-result").innerHTML = "";
+  const text = document.getElementById("search").value;
+  const res = await fetch("./json/products.json");
+  const data = await res.json();
+  const html = data
+    .filter((item) => item.name.toLowerCase().includes(text.toLowerCase()))
+    .map((el) => {
+      return `<div class="search-result">
+                <div class="search-result__text">
+                  <a href="product-detail.html?id=${el.id}">${el.name}</a>
+                  <span>${el.price}</span>
+                </div>
+                <div class="search-result__img">
+                  <img src="img/${el.img1}" />
+                </div>
+              </div>`;
+    })
+    .join("");
+  document.getElementById("search-result").innerHTML = html;
+};

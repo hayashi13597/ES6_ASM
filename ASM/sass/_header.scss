@@ -34,6 +34,16 @@ td,
 th {
   padding: 0;
 }
+.header-search__wrap::-webkit-scrollbar {
+  width: 10px;
+}
+.header-search__wrap::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 20%, 0.8);
+  border-radius: 10px;
+}
+.header-search__wrap::-webkit-scrollbar-track {
+  background-color: hsla(0, 0%, 20%, 0.3);
+}
 .header {
   border-bottom: 1px solid hsla(0, 0%, 20%, 0.2);
   &-topbar {
