@@ -1,0 +1,16 @@
+[
+  {
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": 123456,
+    "address": "12 district",
+    "role": 1
+  },
+  {
+    "name": "Customer",
+    "email": "guest@gmail.com",
+    "password": 123456,
+    "address": "Go Vap district",
+    "role": 0
+  }
+]
